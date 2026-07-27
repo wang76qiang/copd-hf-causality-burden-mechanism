@@ -13,7 +13,7 @@ them from the sources below and place them as indicated.
 | `mediation/` | cached mediation inputs (a-path rds, `ext_med_HF10.tsv`, `tmp_med_*.tsv`, `tmp_hf_*.tsv`, `serpine1_eqtla_region.rds`, `iv_med_TGFB1.rds`, `iv_local_*.rds`) |
 | `finngen/` | `fg_header.txt`, `fg_10snps_raw.tsv` (10-SNP rows of FinnGen R12 I9_HEARTFAIL), `fg_r12_phewas_rs7860931.json` (PheWeb API response) |
 | `drugtarget/` | per-tissue SERPINE1 cis stats (`serpine1_gene/*.csv`), HF region/lead rds, `hf_serpine1_region.tsv`, `tmp_hf_SERPINE1.tsv`, `eqtlgen_serpine1.json` |
-| `bulk/` | investigator-curated expression workbooks: `GSE57148_GSE57338_keygene_expression_values.xlsx` (sheets GSE57148 + GSE57338), `GSE57148_THBS1_two_group_comparison.xlsx`, `GSE57338_ACE_two_group.xlsx`; `gene_list_41_inflammation_fibrosis.csv` (41-gene program) |
+| `bulk/` | investigator-curated expression workbooks: `GSE57148_GSE57338_keygene_expression_values.xlsx` (sheets GSE57148 + GSE57338), `GSE57148_THBS1_two_group_comparison.xlsx`, `GSE57338_ACE_two_group.xlsx`; `gene_list_41_inflammation_fibrosis.xlsx/.csv` (41-gene program). **Governance note:** in the original analysis directory two workbooks were mislabeled - the file named `S100A12.xlsx` actually contains GSE57338 **ACE** values (shipped here as `GSE57338_ACE_two_group.xlsx`), and `S100A8两组比较.xlsx` actually contains GSE57148 **THBS1** values (shipped as `GSE57148_THBS1_two_group_comparison.xlsx`). The scripts in this repository read only the corrected file names. |
 | `figure_assets/Fig7F.jpg` | licensed microscopy panel used inside Figure 7 |
 
 Run `bash code/00_prepare_data_downloads.sh` to stage these into the
