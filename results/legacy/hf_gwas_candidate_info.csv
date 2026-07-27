@@ -1,0 +1,42 @@
+"id","trait","build","group_name","category","subcategory","population","sex","author","nsnp","sample_size","year","ontology","unit","ncase","ncontrol","consortium","pmid","mr","priority","note","sd"
+"ebi-a-GCST009541","Heart failure","HG19/GRCh37","public",NA,NA,"European",NA,"Shah S",7773021,977323,2020,NA,NA,47309,930014,NA,31919418,1,0,NA,NA
+"ebi-a-GCST011365","Myocardial infarction","HG19/GRCh37","public",NA,NA,"European",NA,"Hartiala JA",8106745,395795,2021,NA,NA,14825,44000,NA,33532862,1,0,"beta+se converted from OR+CI; ",NA
+"ebi-a-GCST90018807","Chronic obstructive pulmonary disease","HG19/GRCh37","public",NA,NA,"European",NA,"Sakaue S",24180654,468475,2021,NA,NA,13530,454945,NA,34594039,1,NA,"",NA
+"bbj-a-103","Chronic obstructive pulmonary disease","HG19/GRCh37","public","Binary",NA,"East Asian","Males and Females","Ishigaki K",8885538,204907,2019,NA,NA,3315,201592,NA,NA,1,0,NA,NA
+"bbj-a-109","Congestive heart failure","HG19/GRCh37","public","Binary",NA,"East Asian","Males and Females","Ishigaki K",8885805,212453,2019,NA,NA,9413,203040,NA,NA,1,0,NA,NA
+"bbj-a-111","Drug eruption","HG19/GRCh37","public","Binary",NA,"East Asian","Males and Females","Ishigaki K",8885738,210081,2019,NA,NA,430,209651,NA,NA,1,0,NA,NA
+"bbj-a-113","Endometrial cancer","HG19/GRCh37","public","Binary",NA,"East Asian","Males and Females","Ishigaki K",8876119,90730,2019,NA,NA,999,89731,NA,NA,1,0,NA,NA
+"bbj-a-114","Endometriosis","HG19/GRCh37","public","Binary",NA,"East Asian","Males and Females","Ishigaki K",8877964,103106,2019,NA,NA,734,102372,NA,NA,1,0,NA,NA
+"bbj-a-115","Epilepsy","HG19/GRCh37","public","Binary",NA,"East Asian","Males and Females","Ishigaki K",8885805,212453,2019,NA,NA,2143,210310,NA,NA,1,0,NA,NA
+"bbj-a-117","Esophageal cancer","HG19/GRCh37","public","Binary",NA,"East Asian","Males and Females","Ishigaki K",8885106,197045,2019,NA,NA,1300,195745,NA,NA,1,0,NA,NA
+"ukb-a-270","Impedance of leg (right)","HG19/GRCh37","public",NA,NA,"European","Males and Females","Neale",10894596,331301,2017,NA,"SD",NA,NA,"Neale Lab",NA,1,1,NA,NA
+"ukb-a-271","Impedance of leg (left)","HG19/GRCh37","public",NA,NA,"European","Males and Females","Neale",10894596,331296,2017,NA,"SD",NA,NA,"Neale Lab",NA,1,1,NA,NA
+"ukb-a-272","Impedance of arm (right)","HG19/GRCh37","public",NA,NA,"European","Males and Females","Neale",10894596,331279,2017,NA,"SD",NA,NA,"Neale Lab",NA,1,1,NA,NA
+"ukb-a-273","Impedance of arm (left)","HG19/GRCh37","public",NA,NA,"European","Males and Females","Neale",10894596,331292,2017,NA,"SD",NA,NA,"Neale Lab",NA,1,1,NA,NA
+"ukb-a-274","Leg fat percentage (right)","HG19/GRCh37","public",NA,NA,"European","Males and Females","Neale",10894596,331296,2017,NA,"SD",NA,NA,"Neale Lab",NA,1,1,NA,NA
+"met-a-600","X-10346","HG19/GRCh37","public","Metabolites","Unknown metabolite","European","Males and Females","Shin",2544806,4207,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.3647626251
+"met-a-601","ADpSGEGDFXAEGGGVR*","HG19/GRCh37","public","Metabolites","Peptide","European","Males and Females","Shin",2545660,3939,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2875110087
+"met-a-602","1-eicosatrienoylglycerophosphocholine*","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545640,7809,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.1774887256
+"met-a-603","1-docosahexaenoylglycerophosphocholine*","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545492,7798,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.1842710379
+"met-a-604","X-12405","HG19/GRCh37","public","Metabolites","Unknown metabolite","European","Males and Females","Shin",2546056,6676,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.1939298104
+"met-a-605","X-12407","HG19/GRCh37","public","Metabolites","Unknown metabolite","European","Males and Females","Shin",2543481,2814,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2691178678
+"met-a-606","X-12428","HG19/GRCh37","public","Metabolites","Unknown metabolite","European","Males and Females","Shin",2544499,1439,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2083806271
+"met-a-607","1-eicosadienoylglycerophosphocholine*","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545861,6892,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2046451749
+"met-a-608","X-12435","HG19/GRCh37","public","Metabolites","Unknown metabolite","European","Males and Females","Shin",2539159,231,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2063921205
+"met-a-609","X-12441--12-hydroxyeicosatetraenoate (12-HETE)","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545695,2761,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.3891145183
+"met-a-610","X-12442--5,8-tetradecadienoate","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545631,7780,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2257716575
+"met-a-611","X-12443","HG19/GRCh37","public","Metabolites","Unknown metabolite","European","Males and Females","Shin",2544471,5357,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.3829702602
+"met-a-612","X-12450","HG19/GRCh37","public","Metabolites","Unknown metabolite","European","Males and Females","Shin",2545740,6432,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.167430297
+"met-a-613","X-12456","HG19/GRCh37","public","Metabolites","Unknown metabolite","European","Males and Females","Shin",2545624,4774,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2084759354
+"met-a-614","X-12465","HG19/GRCh37","public","Metabolites","Unknown metabolite","European","Males and Females","Shin",2545306,5883,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2298442506
+"met-a-615","Octanoylcarnitine","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545666,7790,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2066691226
+"met-a-616","Alpha-hydroxyisovalerate","HG19/GRCh37","public","Metabolites","Amino acid","European","Males and Females","Shin",2545440,7668,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.1864579444
+"met-a-617","N-acetylthreonine","HG19/GRCh37","public","Metabolites","Amino acid","European","Males and Females","Shin",2545129,6909,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.1232660105
+"met-a-618","Decanoylcarnitine","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545676,7766,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2224029611
+"met-a-619","1-palmitoylglycerophosphocholine","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545684,7803,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.1037768713
+"met-a-620","1-heptadecanoylglycerophosphocholine","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545876,7422,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2304381041
+"met-a-621","1-oleoylglycerophosphocholine","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545676,7812,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.152034733
+"met-a-622","1-stearoylglycerophosphocholine","HG19/GRCh37","public","Metabolites","Lipid","European","Males and Females","Shin",2545648,7817,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2305727681
+"met-a-623","5-dodecenoate (12:1n7)","HG19/GRCh37","public","Metabolites","Fatty acid","European","Males and Females","Shin",2545535,7770,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.219860295
+"met-a-624","Stearidonate (18:4n3)","HG19/GRCh37","public","Metabolites","Fatty acid","European","Males and Females","Shin",2545635,7775,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.2157744903
+"met-a-625","10-heptadecenoate (17:1n7)","HG19/GRCh37","public","Metabolites","Fatty acid","European","Males and Females","Shin",2545657,7795,2014,NA,"log10 units",NA,NA,NA,24816252,1,1,NA,0.1871235697

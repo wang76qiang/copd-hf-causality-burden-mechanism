@@ -1,0 +1,29 @@
+PhenoScanner V2
+Cardiovascular Epidemiology Unit
+University of Cambridge
+Email: phenoscanner@gmail.com
+
+Information: Each user can query a maximum of 10,000 SNPs (in batches of 100), 1,000 genes (in batches of 10) or 1,000 regions (in batches of 10) per hour. For large batch queries, please ask to download the data from www.phenoscanner.medschl.cam.ac.uk/data.
+Terms of use: Please refer to the terms of use when using PhenoScanner V2 (www.phenoscanner.medschl.cam.ac.uk/about). If you use the results from PhenoScanner in a publication or presentation, please cite all of the relevant references of the data used and the PhenoScanner publications: www.phenoscanner.medschl.cam.ac.uk/about/#citation.
+
+PhenoScanner query failed: cannot open the connection to 'http://www.phenoscanner.medschl.cam.ac.uk/api/?snpquery=rs7860931&catalogue=GWAS&p=1e-05&proxies=None&r2=0.8&build=37' 
+Warning message:
+In file(con, "r") :
+  URL 'http://www.phenoscanner.medschl.cam.ac.uk/api/?snpquery=rs7860931&catalogue=GWAS&p=1e-05&proxies=None&r2=0.8&build=37': Timeout of 60 seconds was reached
+$snp
+[1] "rs7860931"
+
+$status
+[1] "failed"
+
+$note
+[1] "PheWAS requires a validated SERPINE1 cis-pQTL lead SNP and PhenoScanner/UKB-FinnGen access."
+
+$phewas_results
+$phewas_results$status
+[1] "failed"
+
+$phewas_results$error
+[1] "cannot open the connection to 'http://www.phenoscanner.medschl.cam.ac.uk/api/?snpquery=rs7860931&catalogue=GWAS&p=1e-05&proxies=None&r2=0.8&build=37'"
+
+

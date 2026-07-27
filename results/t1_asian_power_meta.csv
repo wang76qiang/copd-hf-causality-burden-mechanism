@@ -1,0 +1,10 @@
+"item","value"
+"n_instruments",6
+"R2_total_instruments",0.094078
+"cases_bbj_a_109",9413
+"controls_assumed_Kanai2018",203040
+"kappa",0.04431
+"observed_IVW_OR",0.9329
+"observed_IVW_p",0.1554
+"required_cases_80pct_OR1.15 (same kappa)",4470
+"required_cases_80pct_OR1.15 (kappa=0.05)",4496

@@ -1,0 +1,11 @@
+# Python dependencies (Python >= 3.10)
+pandas>=1.5
+numpy>=1.23
+scipy>=1.9
+matplotlib>=3.6
+openpyxl>=3.0
+statsmodels>=0.13
+# single-cell modules (07) only:
+scanpy>=1.9
+anndata>=0.8
+h5py>=3.6

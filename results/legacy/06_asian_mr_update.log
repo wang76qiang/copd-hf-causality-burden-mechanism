@@ -1,0 +1,77 @@
+TwoSampleMR version 0.7.9 
+
+ [>] New authentication requirements: https://mrcieu.github.io/ieugwasr/articles/guide.html#authentication.
+ [>] Major upgrades to our servers completed to improve service and stability.
+ [>] We need your help to shape our emerging roadmap!
+     Please take 2 minutes to give us feedback -
+     https://forms.office.com/e/eSr7EFAfCG
+OpenGWAS updates:
+  Date: 2024-05-17
+  [>] OpenGWAS is growing!
+  [>] Please take 2 minutes to give us feedback -
+  [>] It will help directly shape our emerging roadmap
+  [>] https://forms.office.com/e/eSr7EFAfCG
+
+Attaching package: 'ieugwasr'
+
+The following object is masked from 'package:TwoSampleMR':
+
+    ld_matrix
+
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+In readLines("ieu_token.txt") :
+  incomplete final line found on 'ieu_token.txt'
+Extracting Asian COPD instruments from bbj-a-103 
+N instruments: 7 
+Extracting outcome data from bbj-a-109 
+Extracting data for 7 SNP(s) from 1 GWAS(s)
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+Harmonising Chronic obstructive pulmonary disease || id:bbj-a-103 (bbj-a-103) and Congestive heart failure || id:bbj-a-109 (bbj-a-109)
+Removing the following SNPs for being palindromic with intermediate allele frequencies:
+rs503464
+N harmonised SNPs: 6 
+Analysing 'bbj-a-103' on 'bbj-a-109'
+  id.exposure id.outcome                                  outcome
+1   bbj-a-103  bbj-a-109 Congestive heart failure || id:bbj-a-109
+2   bbj-a-103  bbj-a-109 Congestive heart failure || id:bbj-a-109
+3   bbj-a-103  bbj-a-109 Congestive heart failure || id:bbj-a-109
+                                               exposure
+1 Chronic obstructive pulmonary disease || id:bbj-a-103
+2 Chronic obstructive pulmonary disease || id:bbj-a-103
+3 Chronic obstructive pulmonary disease || id:bbj-a-103
+                     method nsnp           b         se      pval      lo_ci
+1 Inverse variance weighted    6 -0.06942490 0.04886893 0.1554230 -0.1652080
+2           Weighted median    6 -0.04170727 0.04910261 0.3956643 -0.1379484
+3                  MR Egger    6  0.21314532 0.24858540 0.4395410 -0.2740821
+       up_ci        or  or_lci95 or_uci95
+1 0.02635821 0.9329302 0.8477174 1.026709
+2 0.05453384 0.9591505 0.8711437 1.056048
+3 0.70037271 1.2375645 0.7602697 2.014503
+  id.exposure id.outcome                                  outcome
+1   bbj-a-103  bbj-a-109 Congestive heart failure || id:bbj-a-109
+                                               exposure egger_intercept
+1 Chronic obstructive pulmonary disease || id:bbj-a-103     -0.05694863
+         se      pval
+1 0.0491847 0.3113504
+  id.exposure id.outcome                                  outcome
+1   bbj-a-103  bbj-a-109 Congestive heart failure || id:bbj-a-109
+2   bbj-a-103  bbj-a-109 Congestive heart failure || id:bbj-a-109
+                                               exposure
+1 Chronic obstructive pulmonary disease || id:bbj-a-103
+2 Chronic obstructive pulmonary disease || id:bbj-a-103
+                     method        Q Q_df    Q_pval
+1                  MR Egger 6.573133    4 0.1602403
+2 Inverse variance weighted 8.776156    5 0.1183326
+Asian MR updated.

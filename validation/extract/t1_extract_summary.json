@@ -1,0 +1,66 @@
+{
+ "anchors": {
+  "1990": {
+   "prev_number_all_ages": [
+    1504707.3912983355,
+    1141643.6703003652,
+    1942359.7468200456
+   ],
+   "prev_rate_agestd": [
+    41.93125395551,
+    32.18603112827,
+    53.413172936310005
+   ],
+   "yld_number_all_ages": [
+    134013.0618502348,
+    83437.21684770602,
+    196502.92467067897
+   ],
+   "yld_rate_agestd": [
+    3.7198528996,
+    2.36064259414,
+    5.44450867099
+   ]
+  },
+  "2021": {
+   "prev_number_all_ages": [
+    3613136.36311905,
+    2666977.717113865,
+    4801973.442086448
+   ],
+   "prev_rate_agestd": [
+    43.23734091268,
+    32.07512158295,
+    57.67708602222999
+   ],
+   "yld_number_all_ages": [
+    321752.54154696595,
+    198202.2668301274,
+    486477.4442431942
+   ],
+   "yld_rate_agestd": [
+    3.84644833199,
+    2.39294379534,
+    5.82072495754
+   ]
+  }
+ },
+ "v8_hypotheses": {
+  "H2_sum_number_all_age_rows_global_2021": 7226272.726238102,
+  "H3_sum_number_all_locations_allages_2021": 30025925.16711431,
+  "H3_n_locations": 260,
+  "n_unique_locations_total": 260,
+  "H4_mean_agerate_all_nonglobal_2021": 28.256518610627722,
+  "H4_median_agerate_all_nonglobal_2021": 25.82618341796,
+  "ratio_aspr_v8_over_anchor": 0.6548538036861503,
+  "implied_pop_v8_millions": 106045.70077351191,
+  "implied_pop_anchor_millions": 8356.51843256495
+ },
+ "china_locations": [
+  "China",
+  "Taiwan (Province of China)"
+ ],
+ "province_locations": [
+  "Taiwan (Province of China)"
+ ]
+}

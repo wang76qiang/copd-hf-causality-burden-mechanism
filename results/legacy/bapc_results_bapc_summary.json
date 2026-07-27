@@ -1,0 +1,20 @@
+{
+  "model": "Frequentist APC model (log(cases+1) ~ s(age) + s(period) + s(cohort)) with bootstrap 95% CIs; INLA unavailable",
+  "base_year": 2021,
+  "base_observed_cases": 3613136.3631,
+  "projection_2035": {
+    "year": 2035,
+    "predicted_cases_mean": 4804195.5236,
+    "predicted_cases_95ci_low": 4366944.3511,
+    "predicted_cases_95ci_high": 6342753.9319,
+    "percent_change_from_2021": 32.96
+  },
+  "projection_2050": {
+    "year": 2050,
+    "predicted_cases_mean": 6253326.1235,
+    "predicted_cases_95ci_low": 5476628.3016,
+    "predicted_cases_95ci_high": 10450310.6026,
+    "percent_change_from_2021": 73.07
+  },
+  "caveat": "Full Bayesian APC with R-INLA could not be run because the INLA Windows binary is missing from the local installation. The frequentist APC model with bootstrap CIs provides a robust alternative."
+}

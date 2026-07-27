@@ -1,0 +1,425 @@
+disease,sender,receiver,receptor,score
+COPD,capillary endothelial cell,B cell,LRP1,0.00494135357439518
+Normal,capillary endothelial cell,B cell,LRP1,0.03496703505516052
+COPD,capillary endothelial cell,B cell,PLAUR,0.027004024013876915
+Normal,capillary endothelial cell,B cell,PLAUR,0.01501460000872612
+COPD,capillary endothelial cell,"CD4-positive, alpha-beta T cell",LRP1,0.0112286526709795
+Normal,capillary endothelial cell,"CD4-positive, alpha-beta T cell",LRP1,0.019093677401542664
+COPD,capillary endothelial cell,"CD4-positive, alpha-beta T cell",PLAUR,0.07961450517177582
+Normal,capillary endothelial cell,"CD4-positive, alpha-beta T cell",PLAUR,0.08773434907197952
+COPD,capillary endothelial cell,"CD8-positive, alpha-beta T cell",LRP1,0.020839562639594078
+Normal,capillary endothelial cell,"CD8-positive, alpha-beta T cell",LRP1,0.024187015369534492
+COPD,capillary endothelial cell,"CD8-positive, alpha-beta T cell",PLAUR,0.06841616332530975
+Normal,capillary endothelial cell,"CD8-positive, alpha-beta T cell",PLAUR,0.06910094618797302
+COPD,capillary endothelial cell,capillary endothelial cell,LRP1,0.02501429058611393
+Normal,capillary endothelial cell,capillary endothelial cell,LRP1,0.052058495581150055
+COPD,capillary endothelial cell,capillary endothelial cell,PLAUR,0.16347108781337738
+Normal,capillary endothelial cell,capillary endothelial cell,PLAUR,0.19241787493228912
+COPD,capillary endothelial cell,club cell,LRP1,0.1273592859506607
+Normal,capillary endothelial cell,club cell,LRP1,0.11008749902248383
+COPD,capillary endothelial cell,club cell,PLAUR,0.11108073592185974
+Normal,capillary endothelial cell,club cell,PLAUR,0.15242315828800201
+COPD,capillary endothelial cell,conventional dendritic cell,LRP1,0.6871740221977234
+Normal,capillary endothelial cell,conventional dendritic cell,LRP1,0.8220128417015076
+COPD,capillary endothelial cell,conventional dendritic cell,PLAUR,1.5857394933700562
+Normal,capillary endothelial cell,conventional dendritic cell,PLAUR,1.6526594161987305
+COPD,capillary endothelial cell,endothelial cell,LRP1,0.01511603593826294
+Normal,capillary endothelial cell,endothelial cell,LRP1,0.05589182674884796
+COPD,capillary endothelial cell,endothelial cell,PLAUR,0.3550705015659332
+Normal,capillary endothelial cell,endothelial cell,PLAUR,0.3664798438549042
+COPD,capillary endothelial cell,endothelial cell of lymphatic vessel,LRP1,0.015818607062101364
+Normal,capillary endothelial cell,endothelial cell of lymphatic vessel,LRP1,0.025617484003305435
+COPD,capillary endothelial cell,endothelial cell of lymphatic vessel,PLAUR,0.11503557860851288
+Normal,capillary endothelial cell,endothelial cell of lymphatic vessel,PLAUR,0.11883269250392914
+COPD,capillary endothelial cell,fibroblast,LRP1,1.1056700944900513
+Normal,capillary endothelial cell,fibroblast,LRP1,1.4083689451217651
+COPD,capillary endothelial cell,fibroblast,PLAUR,0.5033657550811768
+Normal,capillary endothelial cell,fibroblast,PLAUR,0.46657848358154297
+COPD,capillary endothelial cell,leukocyte,LRP1,0.4899013638496399
+Normal,capillary endothelial cell,leukocyte,LRP1,0.2437753975391388
+COPD,capillary endothelial cell,leukocyte,PLAUR,0.6412659883499146
+Normal,capillary endothelial cell,leukocyte,PLAUR,0.4552118480205536
+COPD,capillary endothelial cell,lung multiciliated epithelial cell,LRP1,0.1280859410762787
+Normal,capillary endothelial cell,lung multiciliated epithelial cell,LRP1,0.13201244175434113
+COPD,capillary endothelial cell,lung multiciliated epithelial cell,PLAUR,0.07622518390417099
+Normal,capillary endothelial cell,lung multiciliated epithelial cell,PLAUR,0.12421021610498428
+COPD,capillary endothelial cell,macrophage,LRP1,1.1992270946502686
+Normal,capillary endothelial cell,macrophage,LRP1,1.3208123445510864
+COPD,capillary endothelial cell,macrophage,PLAUR,1.5086008310317993
+Normal,capillary endothelial cell,macrophage,PLAUR,1.794105887413025
+COPD,capillary endothelial cell,mast cell,LRP1,0.02186715416610241
+Normal,capillary endothelial cell,mast cell,LRP1,0.01795280911028385
+COPD,capillary endothelial cell,mast cell,PLAUR,0.6734104156494141
+Normal,capillary endothelial cell,mast cell,PLAUR,0.8643506765365601
+COPD,capillary endothelial cell,monocyte,LRP1,0.5599689483642578
+Normal,capillary endothelial cell,monocyte,LRP1,0.6396744847297668
+COPD,capillary endothelial cell,monocyte,PLAUR,2.2234835624694824
+Normal,capillary endothelial cell,monocyte,PLAUR,2.459742307662964
+COPD,capillary endothelial cell,natural killer cell,LRP1,0.011140285059809685
+Normal,capillary endothelial cell,natural killer cell,LRP1,0.019396081566810608
+COPD,capillary endothelial cell,natural killer cell,PLAUR,0.037134867161512375
+Normal,capillary endothelial cell,natural killer cell,PLAUR,0.04958902299404144
+COPD,capillary endothelial cell,neutrophil,LRP1,0.03273450583219528
+Normal,capillary endothelial cell,neutrophil,LRP1,0.01799810491502285
+COPD,capillary endothelial cell,neutrophil,PLAUR,3.0253164768218994
+Normal,capillary endothelial cell,neutrophil,PLAUR,2.885671615600586
+COPD,capillary endothelial cell,plasma cell,LRP1,0.02100440114736557
+Normal,capillary endothelial cell,plasma cell,LRP1,0.041605498641729355
+COPD,capillary endothelial cell,plasma cell,PLAUR,0.13478074967861176
+Normal,capillary endothelial cell,plasma cell,PLAUR,0.09014248847961426
+COPD,capillary endothelial cell,pulmonary alveolar type 1 cell,LRP1,0.1365407258272171
+Normal,capillary endothelial cell,pulmonary alveolar type 1 cell,LRP1,0.07492191344499588
+COPD,capillary endothelial cell,pulmonary alveolar type 1 cell,PLAUR,0.15578076243400574
+Normal,capillary endothelial cell,pulmonary alveolar type 1 cell,PLAUR,0.1577480435371399
+COPD,capillary endothelial cell,pulmonary alveolar type 2 cell,LRP1,0.05998612567782402
+Normal,capillary endothelial cell,pulmonary alveolar type 2 cell,LRP1,0.06351440399885178
+COPD,capillary endothelial cell,pulmonary alveolar type 2 cell,PLAUR,0.12764547765254974
+Normal,capillary endothelial cell,pulmonary alveolar type 2 cell,PLAUR,0.10854946821928024
+COPD,capillary endothelial cell,smooth muscle cell,LRP1,0.5713856220245361
+Normal,capillary endothelial cell,smooth muscle cell,LRP1,0.729490339756012
+COPD,capillary endothelial cell,smooth muscle cell,PLAUR,0.09995786100625992
+Normal,capillary endothelial cell,smooth muscle cell,PLAUR,0.10969216376543045
+COPD,capillary endothelial cell,vein endothelial cell,LRP1,0.024353012442588806
+Normal,capillary endothelial cell,vein endothelial cell,LRP1,0.017721721902489662
+COPD,capillary endothelial cell,vein endothelial cell,PLAUR,0.3425772190093994
+Normal,capillary endothelial cell,vein endothelial cell,PLAUR,0.4600464999675751
+COPD,endothelial cell,B cell,LRP1,0.002287921030074358
+Normal,endothelial cell,B cell,LRP1,0.015477382577955723
+COPD,endothelial cell,B cell,PLAUR,0.01250327005982399
+Normal,endothelial cell,B cell,PLAUR,0.0066458797082304955
+COPD,endothelial cell,"CD4-positive, alpha-beta T cell",LRP1,0.0051990351639688015
+Normal,endothelial cell,"CD4-positive, alpha-beta T cell",LRP1,0.00845139380544424
+COPD,endothelial cell,"CD4-positive, alpha-beta T cell",PLAUR,0.03686271607875824
+Normal,endothelial cell,"CD4-positive, alpha-beta T cell",PLAUR,0.03883366659283638
+COPD,endothelial cell,"CD8-positive, alpha-beta T cell",LRP1,0.009649030864238739
+Normal,endothelial cell,"CD8-positive, alpha-beta T cell",LRP1,0.01070584636181593
+COPD,endothelial cell,"CD8-positive, alpha-beta T cell",PLAUR,0.031677715480327606
+Normal,endothelial cell,"CD8-positive, alpha-beta T cell",PLAUR,0.030586002394557
+COPD,endothelial cell,capillary endothelial cell,LRP1,0.011581992730498314
+Normal,endothelial cell,capillary endothelial cell,LRP1,0.02304253913462162
+COPD,endothelial cell,capillary endothelial cell,PLAUR,0.07568957656621933
+Normal,endothelial cell,capillary endothelial cell,PLAUR,0.08516950160264969
+COPD,endothelial cell,club cell,LRP1,0.05896926671266556
+Normal,endothelial cell,club cell,LRP1,0.04872778803110123
+COPD,endothelial cell,club cell,PLAUR,0.051432054489851
+Normal,endothelial cell,club cell,PLAUR,0.06746672838926315
+COPD,endothelial cell,conventional dendritic cell,LRP1,0.3181719183921814
+Normal,endothelial cell,conventional dendritic cell,LRP1,0.3638457655906677
+COPD,endothelial cell,conventional dendritic cell,PLAUR,0.7342212796211243
+Normal,endothelial cell,conventional dendritic cell,PLAUR,0.7315130829811096
+COPD,endothelial cell,endothelial cell,LRP1,0.006998952012509108
+Normal,endothelial cell,endothelial cell,LRP1,0.024739276617765427
+COPD,endothelial cell,endothelial cell,PLAUR,0.16440299153327942
+Normal,endothelial cell,endothelial cell,PLAUR,0.16221417486667633
+COPD,endothelial cell,endothelial cell of lymphatic vessel,LRP1,0.007324253208935261
+Normal,endothelial cell,endothelial cell of lymphatic vessel,LRP1,0.01133901160210371
+COPD,endothelial cell,endothelial cell of lymphatic vessel,PLAUR,0.05326320230960846
+Normal,endothelial cell,endothelial cell of lymphatic vessel,PLAUR,0.052598655223846436
+COPD,endothelial cell,fibroblast,LRP1,0.5119418501853943
+Normal,endothelial cell,fibroblast,LRP1,0.6233832836151123
+COPD,endothelial cell,fibroblast,PLAUR,0.2330659031867981
+Normal,endothelial cell,fibroblast,PLAUR,0.20652061700820923
+COPD,endothelial cell,leukocyte,LRP1,0.22683170437812805
+Normal,endothelial cell,leukocyte,LRP1,0.10790177434682846
+COPD,endothelial cell,leukocyte,PLAUR,0.29691579937934875
+Normal,endothelial cell,leukocyte,PLAUR,0.2014894336462021
+COPD,endothelial cell,lung multiciliated epithelial cell,LRP1,0.059305716305971146
+Normal,endothelial cell,lung multiciliated epithelial cell,LRP1,0.05843237787485123
+COPD,endothelial cell,lung multiciliated epithelial cell,PLAUR,0.03529340401291847
+Normal,endothelial cell,lung multiciliated epithelial cell,PLAUR,0.05497889965772629
+COPD,endothelial cell,macrophage,LRP1,0.555260181427002
+Normal,endothelial cell,macrophage,LRP1,0.5846283435821533
+COPD,endothelial cell,macrophage,PLAUR,0.6985048651695251
+Normal,endothelial cell,macrophage,PLAUR,0.7941212058067322
+COPD,endothelial cell,mast cell,LRP1,0.010124821215867996
+Normal,endothelial cell,mast cell,LRP1,0.00794641301035881
+COPD,endothelial cell,mast cell,PLAUR,0.31179913878440857
+Normal,endothelial cell,mast cell,PLAUR,0.38258564472198486
+COPD,endothelial cell,monocyte,LRP1,0.25927403569221497
+Normal,endothelial cell,monocyte,LRP1,0.283137708902359
+COPD,endothelial cell,monocyte,PLAUR,1.0295064449310303
+Normal,endothelial cell,monocyte,PLAUR,1.0887504816055298
+COPD,endothelial cell,natural killer cell,LRP1,0.00515811936929822
+Normal,endothelial cell,natural killer cell,LRP1,0.008585245348513126
+COPD,endothelial cell,natural killer cell,PLAUR,0.017194001004099846
+Normal,endothelial cell,natural killer cell,PLAUR,0.021949483081698418
+COPD,endothelial cell,neutrophil,LRP1,0.01515656802803278
+Normal,endothelial cell,neutrophil,LRP1,0.007966462522745132
+COPD,endothelial cell,neutrophil,PLAUR,1.4007670879364014
+Normal,endothelial cell,neutrophil,PLAUR,1.2772785425186157
+COPD,endothelial cell,plasma cell,LRP1,0.009725353680551052
+Normal,endothelial cell,plasma cell,LRP1,0.018415752798318863
+COPD,endothelial cell,plasma cell,PLAUR,0.06240551546216011
+Normal,endothelial cell,plasma cell,PLAUR,0.03989957273006439
+COPD,endothelial cell,pulmonary alveolar type 1 cell,LRP1,0.06322041153907776
+Normal,endothelial cell,pulmonary alveolar type 1 cell,LRP1,0.033162523061037064
+COPD,endothelial cell,pulmonary alveolar type 1 cell,PLAUR,0.07212883979082108
+Normal,endothelial cell,pulmonary alveolar type 1 cell,PLAUR,0.06982367485761642
+COPD,endothelial cell,pulmonary alveolar type 2 cell,LRP1,0.027774479240179062
+Normal,endothelial cell,pulmonary alveolar type 2 cell,LRP1,0.028113242238759995
+COPD,endothelial cell,pulmonary alveolar type 2 cell,PLAUR,0.05910177901387215
+Normal,endothelial cell,pulmonary alveolar type 2 cell,PLAUR,0.0480470173060894
+COPD,endothelial cell,smooth muscle cell,LRP1,0.26456013321876526
+Normal,endothelial cell,smooth muscle cell,LRP1,0.3228927254676819
+COPD,endothelial cell,smooth muscle cell,PLAUR,0.04628199338912964
+Normal,endothelial cell,smooth muscle cell,PLAUR,0.048552803695201874
+COPD,endothelial cell,vein endothelial cell,LRP1,0.01127581112086773
+Normal,endothelial cell,vein endothelial cell,LRP1,0.007844127714633942
+COPD,endothelial cell,vein endothelial cell,PLAUR,0.15861840546131134
+Normal,endothelial cell,vein endothelial cell,PLAUR,0.20362938940525055
+COPD,endothelial cell of lymphatic vessel,B cell,LRP1,0.0006625427631661296
+Normal,endothelial cell of lymphatic vessel,B cell,LRP1,0.004349077586084604
+COPD,endothelial cell of lymphatic vessel,B cell,PLAUR,0.003620732808485627
+Normal,endothelial cell of lymphatic vessel,B cell,PLAUR,0.0018674635794013739
+COPD,endothelial cell of lymphatic vessel,"CD4-positive, alpha-beta T cell",LRP1,0.001505551510490477
+Normal,endothelial cell of lymphatic vessel,"CD4-positive, alpha-beta T cell",LRP1,0.0023748050443828106
+COPD,endothelial cell of lymphatic vessel,"CD4-positive, alpha-beta T cell",PLAUR,0.010674810968339443
+Normal,endothelial cell of lymphatic vessel,"CD4-positive, alpha-beta T cell",PLAUR,0.0109120924025774
+COPD,endothelial cell of lymphatic vessel,"CD8-positive, alpha-beta T cell",LRP1,0.0027941942680627108
+Normal,endothelial cell of lymphatic vessel,"CD8-positive, alpha-beta T cell",LRP1,0.003008296713232994
+COPD,endothelial cell of lymphatic vessel,"CD8-positive, alpha-beta T cell",PLAUR,0.009173323400318623
+Normal,endothelial cell of lymphatic vessel,"CD8-positive, alpha-beta T cell",PLAUR,0.008594535291194916
+COPD,endothelial cell of lymphatic vessel,capillary endothelial cell,LRP1,0.003353946842253208
+Normal,endothelial cell of lymphatic vessel,capillary endothelial cell,LRP1,0.006474854424595833
+COPD,endothelial cell of lymphatic vessel,capillary endothelial cell,PLAUR,0.0219184048473835
+Normal,endothelial cell of lymphatic vessel,capillary endothelial cell,PLAUR,0.023932263255119324
+COPD,endothelial cell of lymphatic vessel,club cell,LRP1,0.017076490446925163
+Normal,endothelial cell of lymphatic vessel,club cell,LRP1,0.013692298904061317
+COPD,endothelial cell of lymphatic vessel,club cell,PLAUR,0.014893841929733753
+Normal,endothelial cell of lymphatic vessel,club cell,PLAUR,0.01895786076784134
+COPD,endothelial cell of lymphatic vessel,conventional dendritic cell,LRP1,0.09213713556528091
+Normal,endothelial cell of lymphatic vessel,conventional dendritic cell,LRP1,0.10223908722400665
+COPD,endothelial cell of lymphatic vessel,conventional dendritic cell,PLAUR,0.2126179039478302
+Normal,endothelial cell of lymphatic vessel,conventional dendritic cell,PLAUR,0.20555201172828674
+COPD,endothelial cell of lymphatic vessel,endothelial cell,LRP1,0.0020267765503376722
+Normal,endothelial cell of lymphatic vessel,endothelial cell,LRP1,0.0069516305811703205
+COPD,endothelial cell of lymphatic vessel,endothelial cell,PLAUR,0.04760828986763954
+Normal,endothelial cell of lymphatic vessel,endothelial cell,PLAUR,0.04558148235082626
+COPD,endothelial cell of lymphatic vessel,endothelial cell of lymphatic vessel,LRP1,0.002120978431776166
+Normal,endothelial cell of lymphatic vessel,endothelial cell of lymphatic vessel,LRP1,0.003186213318258524
+COPD,endothelial cell of lymphatic vessel,endothelial cell of lymphatic vessel,PLAUR,0.015424110926687717
+Normal,endothelial cell of lymphatic vessel,endothelial cell of lymphatic vessel,PLAUR,0.014779996126890182
+COPD,endothelial cell of lymphatic vessel,fibroblast,LRP1,0.14824959635734558
+Normal,endothelial cell of lymphatic vessel,fibroblast,LRP1,0.1751680225133896
+COPD,endothelial cell of lymphatic vessel,fibroblast,PLAUR,0.06749189645051956
+Normal,endothelial cell of lymphatic vessel,fibroblast,PLAUR,0.05803140252828598
+COPD,endothelial cell of lymphatic vessel,leukocyte,LRP1,0.06568657606840134
+Normal,endothelial cell of lymphatic vessel,leukocyte,LRP1,0.030319934710860252
+COPD,endothelial cell of lymphatic vessel,leukocyte,PLAUR,0.08598172664642334
+Normal,endothelial cell of lymphatic vessel,leukocyte,PLAUR,0.05661766231060028
+COPD,endothelial cell of lymphatic vessel,lung multiciliated epithelial cell,LRP1,0.017173919826745987
+Normal,endothelial cell of lymphatic vessel,lung multiciliated epithelial cell,LRP1,0.016419246792793274
+COPD,endothelial cell of lymphatic vessel,lung multiciliated epithelial cell,PLAUR,0.010220365598797798
+Normal,endothelial cell of lymphatic vessel,lung multiciliated epithelial cell,PLAUR,0.01544883381575346
+COPD,endothelial cell of lymphatic vessel,macrophage,LRP1,0.16079384088516235
+Normal,endothelial cell of lymphatic vessel,macrophage,LRP1,0.164278045296669
+COPD,endothelial cell of lymphatic vessel,macrophage,PLAUR,0.20227503776550293
+Normal,endothelial cell of lymphatic vessel,macrophage,PLAUR,0.22314463555812836
+COPD,endothelial cell of lymphatic vessel,mast cell,LRP1,0.0029319748282432556
+Normal,endothelial cell of lymphatic vessel,mast cell,LRP1,0.0022329078055918217
+COPD,endothelial cell of lymphatic vessel,mast cell,PLAUR,0.09029169380664825
+Normal,endothelial cell of lymphatic vessel,mast cell,PLAUR,0.10750491917133331
+COPD,endothelial cell of lymphatic vessel,monocyte,LRP1,0.07508131861686707
+Normal,endothelial cell of lymphatic vessel,monocyte,LRP1,0.07956048101186752
+COPD,endothelial cell of lymphatic vessel,monocyte,PLAUR,0.2981274127960205
+Normal,endothelial cell of lymphatic vessel,monocyte,PLAUR,0.30593419075012207
+COPD,endothelial cell of lymphatic vessel,natural killer cell,LRP1,0.0014937031082808971
+Normal,endothelial cell of lymphatic vessel,natural killer cell,LRP1,0.002412416972219944
+COPD,endothelial cell of lymphatic vessel,natural killer cell,PLAUR,0.004979088436812162
+Normal,endothelial cell of lymphatic vessel,natural killer cell,PLAUR,0.006167709827423096
+COPD,endothelial cell of lymphatic vessel,neutrophil,LRP1,0.004389082547277212
+Normal,endothelial cell of lymphatic vessel,neutrophil,LRP1,0.0022385416086763144
+COPD,endothelial cell of lymphatic vessel,neutrophil,PLAUR,0.4056381583213806
+Normal,endothelial cell of lymphatic vessel,neutrophil,PLAUR,0.3589097559452057
+COPD,endothelial cell of lymphatic vessel,plasma cell,LRP1,0.002816295949742198
+Normal,endothelial cell of lymphatic vessel,plasma cell,LRP1,0.0051747472025454044
+COPD,endothelial cell of lymphatic vessel,plasma cell,PLAUR,0.018071569502353668
+Normal,endothelial cell of lymphatic vessel,plasma cell,PLAUR,0.011211607605218887
+COPD,endothelial cell of lymphatic vessel,pulmonary alveolar type 1 cell,LRP1,0.018307548016309738
+Normal,endothelial cell of lymphatic vessel,pulmonary alveolar type 1 cell,LRP1,0.009318525902926922
+COPD,endothelial cell of lymphatic vessel,pulmonary alveolar type 1 cell,PLAUR,0.020887276157736778
+Normal,endothelial cell of lymphatic vessel,pulmonary alveolar type 1 cell,PLAUR,0.019620152190327644
+COPD,endothelial cell of lymphatic vessel,pulmonary alveolar type 2 cell,LRP1,0.008043013513088226
+Normal,endothelial cell of lymphatic vessel,pulmonary alveolar type 2 cell,LRP1,0.007899699732661247
+COPD,endothelial cell of lymphatic vessel,pulmonary alveolar type 2 cell,PLAUR,0.01711486279964447
+Normal,endothelial cell of lymphatic vessel,pulmonary alveolar type 2 cell,PLAUR,0.013501005247235298
+COPD,endothelial cell of lymphatic vessel,smooth muscle cell,LRP1,0.07661208510398865
+Normal,endothelial cell of lymphatic vessel,smooth muscle cell,LRP1,0.09073146432638168
+COPD,endothelial cell of lymphatic vessel,smooth muscle cell,PLAUR,0.013402472250163555
+Normal,endothelial cell of lymphatic vessel,smooth muscle cell,PLAUR,0.013643128797411919
+COPD,endothelial cell of lymphatic vessel,vein endothelial cell,LRP1,0.0032652816735208035
+Normal,endothelial cell of lymphatic vessel,vein endothelial cell,LRP1,0.0022041660267859697
+COPD,endothelial cell of lymphatic vessel,vein endothelial cell,PLAUR,0.04593317583203316
+Normal,endothelial cell of lymphatic vessel,vein endothelial cell,PLAUR,0.05721898004412651
+COPD,fibroblast,B cell,LRP1,0.003082183189690113
+Normal,fibroblast,B cell,LRP1,0.012857573106884956
+COPD,fibroblast,B cell,PLAUR,0.01684383675456047
+Normal,fibroblast,B cell,PLAUR,0.005520951934158802
+COPD,fibroblast,"CD4-positive, alpha-beta T cell",LRP1,0.007003903854638338
+Normal,fibroblast,"CD4-positive, alpha-beta T cell",LRP1,0.007020852062851191
+COPD,fibroblast,"CD4-positive, alpha-beta T cell",PLAUR,0.04965977370738983
+Normal,fibroblast,"CD4-positive, alpha-beta T cell",PLAUR,0.032260410487651825
+COPD,fibroblast,"CD8-positive, alpha-beta T cell",LRP1,0.012998736463487148
+Normal,fibroblast,"CD8-positive, alpha-beta T cell",LRP1,0.008893700316548347
+COPD,fibroblast,"CD8-positive, alpha-beta T cell",PLAUR,0.042674776166677475
+Normal,fibroblast,"CD8-positive, alpha-beta T cell",PLAUR,0.025408804416656494
+COPD,fibroblast,capillary endothelial cell,LRP1,0.015602733939886093
+Normal,fibroblast,capillary endothelial cell,LRP1,0.01914219930768013
+COPD,fibroblast,capillary endothelial cell,PLAUR,0.10196555405855179
+Normal,fibroblast,capillary endothelial cell,PLAUR,0.07075311988592148
+COPD,fibroblast,club cell,LRP1,0.07944071292877197
+Normal,fibroblast,club cell,LRP1,0.040479786694049835
+COPD,fibroblast,club cell,PLAUR,0.06928692013025284
+Normal,fibroblast,club cell,PLAUR,0.05604684352874756
+COPD,fibroblast,conventional dendritic cell,LRP1,0.42862674593925476
+Normal,fibroblast,conventional dendritic cell,LRP1,0.30225870013237
+COPD,fibroblast,conventional dendritic cell,PLAUR,0.9891095161437988
+Normal,fibroblast,conventional dendritic cell,PLAUR,0.6076920628547668
+COPD,fibroblast,endothelial cell,LRP1,0.009428669698536396
+Normal,fibroblast,endothelial cell,LRP1,0.020551735535264015
+COPD,fibroblast,endothelial cell,PLAUR,0.2214762270450592
+Normal,fibroblast,endothelial cell,PLAUR,0.1347566843032837
+COPD,fibroblast,endothelial cell of lymphatic vessel,LRP1,0.00986690167337656
+Normal,fibroblast,endothelial cell of lymphatic vessel,LRP1,0.009419691748917103
+COPD,fibroblast,endothelial cell of lymphatic vessel,PLAUR,0.07175376266241074
+Normal,fibroblast,endothelial cell of lymphatic vessel,PLAUR,0.043695442378520966
+COPD,fibroblast,fibroblast,LRP1,0.6896647810935974
+Normal,fibroblast,fibroblast,LRP1,0.5178651213645935
+COPD,fibroblast,fibroblast,PLAUR,0.31397581100463867
+Normal,fibroblast,fibroblast,PLAUR,0.1715635061264038
+COPD,fibroblast,leukocyte,LRP1,0.3055773675441742
+Normal,fibroblast,leukocyte,LRP1,0.08963757008314133
+COPD,fibroblast,leukocyte,PLAUR,0.3999914526939392
+Normal,fibroblast,leukocyte,PLAUR,0.16738392412662506
+COPD,fibroblast,lung multiciliated epithelial cell,LRP1,0.07989396899938583
+Normal,fibroblast,lung multiciliated epithelial cell,LRP1,0.048541709780693054
+COPD,fibroblast,lung multiciliated epithelial cell,PLAUR,0.047545671463012695
+Normal,fibroblast,lung multiciliated epithelial cell,PLAUR,0.045672789216041565
+COPD,fibroblast,macrophage,LRP1,0.7480213046073914
+Normal,fibroblast,macrophage,LRP1,0.4856700897216797
+COPD,fibroblast,macrophage,PLAUR,0.9409940242767334
+Normal,fibroblast,macrophage,PLAUR,0.659702718257904
+COPD,fibroblast,mast cell,LRP1,0.01363969873636961
+Normal,fibroblast,mast cell,LRP1,0.006601347588002682
+COPD,fibroblast,mast cell,PLAUR,0.42004165053367615
+Normal,fibroblast,mast cell,PLAUR,0.3178265690803528
+COPD,fibroblast,monocyte,LRP1,0.3492822051048279
+Normal,fibroblast,monocyte,LRP1,0.23521186411380768
+COPD,fibroblast,monocyte,PLAUR,1.386904239654541
+Normal,fibroblast,monocyte,PLAUR,0.9044609665870667
+COPD,fibroblast,natural killer cell,LRP1,0.006948784459382296
+Normal,fibroblast,natural killer cell,LRP1,0.007132047321647406
+COPD,fibroblast,natural killer cell,PLAUR,0.023162977769970894
+Normal,fibroblast,natural killer cell,PLAUR,0.018234161660075188
+COPD,fibroblast,neutrophil,LRP1,0.020418239757418633
+Normal,fibroblast,neutrophil,LRP1,0.006618003826588392
+COPD,fibroblast,neutrophil,PLAUR,1.887049674987793
+Normal,fibroblast,neutrophil,PLAUR,1.0610774755477905
+COPD,fibroblast,plasma cell,LRP1,0.013101554475724697
+Normal,fibroblast,plasma cell,LRP1,0.015298574231564999
+COPD,fibroblast,plasma cell,PLAUR,0.0840698778629303
+Normal,fibroblast,plasma cell,PLAUR,0.03314589336514473
+COPD,fibroblast,pulmonary alveolar type 1 cell,LRP1,0.08516766875982285
+Normal,fibroblast,pulmonary alveolar type 1 cell,LRP1,0.027549205347895622
+COPD,fibroblast,pulmonary alveolar type 1 cell,PLAUR,0.0971686914563179
+Normal,fibroblast,pulmonary alveolar type 1 cell,PLAUR,0.05800483748316765
+COPD,fibroblast,pulmonary alveolar type 2 cell,LRP1,0.03741651400923729
+Normal,fibroblast,pulmonary alveolar type 2 cell,LRP1,0.023354599252343178
+COPD,fibroblast,pulmonary alveolar type 2 cell,PLAUR,0.07961922883987427
+Normal,fibroblast,pulmonary alveolar type 2 cell,PLAUR,0.039914246648550034
+COPD,fibroblast,smooth muscle cell,LRP1,0.3564033806324005
+Normal,fibroblast,smooth muscle cell,LRP1,0.2682376503944397
+COPD,fibroblast,smooth muscle cell,PLAUR,0.062348995357751846
+Normal,fibroblast,smooth muscle cell,PLAUR,0.040334418416023254
+COPD,fibroblast,vein endothelial cell,LRP1,0.01519025955349207
+Normal,fibroblast,vein endothelial cell,LRP1,0.006516376044601202
+COPD,fibroblast,vein endothelial cell,PLAUR,0.21368351578712463
+Normal,fibroblast,vein endothelial cell,PLAUR,0.16916166245937347
+COPD,vein endothelial cell,B cell,LRP1,0.0030151866376399994
+Normal,vein endothelial cell,B cell,LRP1,0.01895732246339321
+COPD,vein endothelial cell,B cell,PLAUR,0.016477705910801888
+Normal,vein endothelial cell,B cell,PLAUR,0.008140141144394875
+COPD,vein endothelial cell,"CD4-positive, alpha-beta T cell",LRP1,0.006851661950349808
+Normal,vein endothelial cell,"CD4-positive, alpha-beta T cell",LRP1,0.010351607576012611
+COPD,vein endothelial cell,"CD4-positive, alpha-beta T cell",PLAUR,0.04858033359050751
+Normal,vein endothelial cell,"CD4-positive, alpha-beta T cell",PLAUR,0.0475650392472744
+COPD,vein endothelial cell,"CD8-positive, alpha-beta T cell",LRP1,0.012716186232864857
+Normal,vein endothelial cell,"CD8-positive, alpha-beta T cell",LRP1,0.013112952001392841
+COPD,vein endothelial cell,"CD8-positive, alpha-beta T cell",PLAUR,0.04174716770648956
+Normal,vein endothelial cell,"CD8-positive, alpha-beta T cell",PLAUR,0.03746296837925911
+COPD,vein endothelial cell,capillary endothelial cell,LRP1,0.015263581648468971
+Normal,vein endothelial cell,capillary endothelial cell,LRP1,0.0282234326004982
+COPD,vein endothelial cell,capillary endothelial cell,PLAUR,0.09974915534257889
+Normal,vein endothelial cell,capillary endothelial cell,PLAUR,0.10431904345750809
+COPD,vein endothelial cell,club cell,LRP1,0.07771393656730652
+Normal,vein endothelial cell,club cell,LRP1,0.05968376249074936
+COPD,vein endothelial cell,club cell,PLAUR,0.06778085231781006
+Normal,vein endothelial cell,club cell,PLAUR,0.08263597637414932
+COPD,vein endothelial cell,conventional dendritic cell,LRP1,0.4193097949028015
+Normal,vein endothelial cell,conventional dendritic cell,LRP1,0.44565296173095703
+COPD,vein endothelial cell,conventional dendritic cell,PLAUR,0.9676095247268677
+Normal,vein endothelial cell,conventional dendritic cell,PLAUR,0.8959866762161255
+COPD,vein endothelial cell,endothelial cell,LRP1,0.00922372192144394
+Normal,vein endothelial cell,endothelial cell,LRP1,0.030301664024591446
+COPD,vein endothelial cell,endothelial cell,PLAUR,0.21666206419467926
+Normal,vein endothelial cell,endothelial cell,PLAUR,0.19868646562099457
+COPD,vein endothelial cell,endothelial cell of lymphatic vessel,LRP1,0.009652427397668362
+Normal,vein endothelial cell,endothelial cell of lymphatic vessel,LRP1,0.01388847827911377
+COPD,vein endothelial cell,endothelial cell of lymphatic vessel,PLAUR,0.0701940730214119
+Normal,vein endothelial cell,endothelial cell of lymphatic vessel,PLAUR,0.06442495435476303
+COPD,vein endothelial cell,fibroblast,LRP1,0.6746737360954285
+Normal,vein endothelial cell,fibroblast,LRP1,0.7635449767112732
+COPD,vein endothelial cell,fibroblast,PLAUR,0.3071509897708893
+Normal,vein endothelial cell,fibroblast,PLAUR,0.25295478105545044
+COPD,vein endothelial cell,leukocyte,LRP1,0.2989351153373718
+Normal,vein endothelial cell,leukocyte,LRP1,0.1321624517440796
+COPD,vein endothelial cell,leukocyte,PLAUR,0.39129695296287537
+Normal,vein endothelial cell,leukocyte,PLAUR,0.24679237604141235
+COPD,vein endothelial cell,lung multiciliated epithelial cell,LRP1,0.07815733551979065
+Normal,vein endothelial cell,lung multiciliated epithelial cell,LRP1,0.07157033681869507
+COPD,vein endothelial cell,lung multiciliated epithelial cell,PLAUR,0.0465121828019619
+Normal,vein endothelial cell,lung multiciliated epithelial cell,PLAUR,0.06734037399291992
+COPD,vein endothelial cell,macrophage,LRP1,0.7317617535591125
+Normal,vein endothelial cell,macrophage,LRP1,0.7160763144493103
+COPD,vein endothelial cell,macrophage,PLAUR,0.9205398559570312
+Normal,vein endothelial cell,macrophage,PLAUR,0.972671627998352
+COPD,vein endothelial cell,mast cell,LRP1,0.013343216851353645
+Normal,vein endothelial cell,mast cell,LRP1,0.009733086451888084
+COPD,vein endothelial cell,mast cell,PLAUR,0.41091132164001465
+Normal,vein endothelial cell,mast cell,PLAUR,0.4686063528060913
+COPD,vein endothelial cell,monocyte,LRP1,0.34168994426727295
+Normal,vein endothelial cell,monocyte,LRP1,0.34679850935935974
+COPD,vein endothelial cell,monocyte,PLAUR,1.356757402420044
+Normal,vein endothelial cell,monocyte,PLAUR,1.333545446395874
+COPD,vein endothelial cell,natural killer cell,LRP1,0.006797740235924721
+Normal,vein endothelial cell,natural killer cell,LRP1,0.010515554808080196
+COPD,vein endothelial cell,natural killer cell,PLAUR,0.022659489884972572
+Normal,vein endothelial cell,natural killer cell,PLAUR,0.026884611696004868
+COPD,vein endothelial cell,neutrophil,LRP1,0.019974414259195328
+Normal,vein endothelial cell,neutrophil,LRP1,0.00975764449685812
+COPD,vein endothelial cell,neutrophil,PLAUR,1.8460314273834229
+Normal,vein endothelial cell,neutrophil,PLAUR,1.5644623041152954
+COPD,vein endothelial cell,plasma cell,LRP1,0.012816770002245903
+Normal,vein endothelial cell,plasma cell,LRP1,0.022556357085704803
+COPD,vein endothelial cell,plasma cell,PLAUR,0.08224247395992279
+Normal,vein endothelial cell,plasma cell,PLAUR,0.04887060448527336
+COPD,vein endothelial cell,pulmonary alveolar type 1 cell,LRP1,0.08331640064716339
+Normal,vein endothelial cell,pulmonary alveolar type 1 cell,LRP1,0.04061879590153694
+COPD,vein endothelial cell,pulmonary alveolar type 1 cell,PLAUR,0.09505656361579895
+Normal,vein endothelial cell,pulmonary alveolar type 1 cell,PLAUR,0.0855228528380394
+COPD,vein endothelial cell,pulmonary alveolar type 2 cell,LRP1,0.036603204905986786
+Normal,vein endothelial cell,pulmonary alveolar type 2 cell,LRP1,0.034434232860803604
+COPD,vein endothelial cell,pulmonary alveolar type 2 cell,PLAUR,0.07788857072591782
+Normal,vein endothelial cell,pulmonary alveolar type 2 cell,PLAUR,0.05884992331266403
+COPD,vein endothelial cell,smooth muscle cell,LRP1,0.3486563563346863
+Normal,vein endothelial cell,smooth muscle cell,LRP1,0.3954920172691345
+COPD,vein endothelial cell,smooth muscle cell,PLAUR,0.0609937347471714
+Normal,vein endothelial cell,smooth muscle cell,PLAUR,0.05946943163871765
+COPD,vein endothelial cell,vein endothelial cell,LRP1,0.01486007310450077
+Normal,vein endothelial cell,vein endothelial cell,LRP1,0.009607803076505661
+COPD,vein endothelial cell,vein endothelial cell,PLAUR,0.20903873443603516
+Normal,vein endothelial cell,vein endothelial cell,PLAUR,0.24941347539424896
+Normal,__ALL__,__ALL__,LRP1,19.925115894366172
+Normal,__ALL__,__ALL__,PLAUR,43.033482855891634
+COPD,__ALL__,__ALL__,LRP1,19.217872200246347
+COPD,__ALL__,__ALL__,PLAUR,43.965708227035066

@@ -1,0 +1,381 @@
+{
+  "mr": {
+    "ivw": {
+      "beta": 0.14045256258825345,
+      "se": 0.031071932509529932,
+      "pval": 6.176984296279997e-06,
+      "or": 1.1507944875580642,
+      "or_lci": 1.082801403430513,
+      "or_uci": 1.2230571076083894
+    },
+    "mr_egger": {
+      "intercept": 0.0005226723757020354,
+      "intercept_se": 0.005560206973056846,
+      "intercept_pval": 0.9251073108689478,
+      "slope": 0.13985180867202368,
+      "slope_se": 0.04814177352358596,
+      "slope_pval": 0.0036725415834406583
+    },
+    "weighted_median": {
+      "beta": 0.19767441860465115,
+      "se": 0.038933131434441,
+      "pval": 3.8287596537678326e-07
+    },
+    "simple_mode": {
+      "beta": 0.19590062002930989,
+      "se": 0.050237744137535,
+      "pval": 9.640313271952472e-05
+    },
+    "heterogeneity": {
+      "Q": 18.886670093507107,
+      "df": 9,
+      "pval": 0.02617394414727936,
+      "I2_percent": 52.34734362679403
+    },
+    "f_statistics": {
+      "median": 36.864429428684915,
+      "min": 31.475400086505196,
+      "max": 166.40999999999997
+    },
+    "leave_one_out": [
+      {
+        "SNP": "rs114904431",
+        "beta": 0.11607549673569093,
+        "OR": 1.1230806578562775
+      },
+      {
+        "SNP": "rs11525583",
+        "beta": 0.14487394654235522,
+        "OR": 1.1558938566670598
+      },
+      {
+        "SNP": "rs1246642",
+        "beta": 0.13288664304466677,
+        "OR": 1.1421205236874183
+      },
+      {
+        "SNP": "rs1512281",
+        "beta": 0.15532643813966995,
+        "OR": 1.1680391914183907
+      },
+      {
+        "SNP": "rs2273500",
+        "beta": 0.13688815901358636,
+        "OR": 1.1466998933012496
+      },
+      {
+        "SNP": "rs2395191",
+        "beta": 0.1381284142820486,
+        "OR": 1.148122976195871
+      },
+      {
+        "SNP": "rs34944514",
+        "beta": 0.15203440752336447,
+        "OR": 1.164200292991767
+      },
+      {
+        "SNP": "rs3822479",
+        "beta": 0.1789709673933362,
+        "OR": 1.1959860210721098
+      },
+      {
+        "SNP": "rs4488938",
+        "beta": 0.13628818547720253,
+        "OR": 1.1460121100575988
+      },
+      {
+        "SNP": "rs9788721",
+        "beta": 0.1104362565181091,
+        "OR": 1.1167651602834614
+      }
+    ],
+    "ivw_random_effects": {
+      "beta": 0.1455538904415395,
+      "se": 0.05082328728672933,
+      "pval": 0.004184320775457273,
+      "or": 1.156680066902141,
+      "or_lci": 1.0470118473653234,
+      "or_uci": 1.2778353755360312,
+      "tau2": 0.011834632660708473,
+      "note": "Random-effects IVW using DerSimonian-Laird estimator on Wald ratios"
+    }
+  },
+  "mr_clust_proxy": {
+    "note": "This is a Python-based proxy using K-means on Wald ratios, not the full MR-Clust Bayesian model.",
+    "n_clusters": 2,
+    "cluster_means": [
+      -0.03015800390919232,
+      0.26304163071501047
+    ],
+    "cluster_sizes": [
+      4,
+      6
+    ],
+    "dominant_cluster": 1,
+    "dominant_cluster_size": 6,
+    "interpretation": "Multiple clusters detected; potential pleiotropy"
+  },
+  "gbd_2021": {
+    "global_aspr_2021": 28.314137157943303,
+    "global_yld_rate_2021": 2.5256761060711925,
+    "global_cases_2021": 30025925.16711431,
+    "max_burden_country": {
+      "name": "Papua New Guinea",
+      "rate": 83.09089298606
+    },
+    "min_burden_country": {
+      "name": "Uzbekistan",
+      "rate": 3.19580694921
+    },
+    "fold_disparity": 25.9999725598569
+  },
+  "paf": {
+    "method": "Levin's PAF = p_e * (OR - 1) / (1 + p_e * (OR - 1))",
+    "OR_copd_hf": 1.1507944875580642,
+    "copd_prevalence_assumptions": {
+      "low": 0.03,
+      "central": 0.05,
+      "high": 0.1
+    },
+    "PAF": {
+      "low": 0.0045034617107147885,
+      "central": 0.007483302340816935,
+      "high": 0.014855436955490986
+    },
+    "PAF_percent": {
+      "low": 0.45034617107147884,
+      "central": 0.7483302340816935,
+      "high": 1.4855436955490986
+    },
+    "attributable_cases_central_2021": 224693.07608826066,
+    "note": "PAF depends heavily on COPD prevalence assumption; GBD-attributable HF data alone cannot estimate it."
+  },
+  "bapc_proxy": {
+    "note": "Python log-linear projection from real GBD 1990-2021 data; NOT full Bayesian APC with INLA. No credible intervals available.",
+    "model": "log-linear regression of global cases vs year",
+    "R2": 0.995006576158897,
+    "log_slope_per_year": 0.026127935609405573,
+    "cases_2021": 30025925.167114306,
+    "baseline_2035": 41548485.29809759,
+    "baseline_2050": 61484191.922354996,
+    "change_2035_pct": 38.375370839874364,
+    "change_2050_pct": 104.77034955677284,
+    "scenarios_2050": {
+      "80% COPD screening": {
+        "cases": 58963340.05353844,
+        "reduction_pct": 4.1000000000000005,
+        "change_vs_2021_pct": 96.37476522494516
+      },
+      "50% smoking reduction": {
+        "cases": 40518082.47683194,
+        "reduction_pct": 34.1,
+        "change_vs_2021_pct": 34.94366035791331
+      },
+      "Combined intervention": {
+        "cases": 35045989.39574235,
+        "reduction_pct": 43.0,
+        "change_vs_2021_pct": 16.71909924736053
+      }
+    }
+  },
+  "cause": {
+    "status": "fallback_causal_model",
+    "n_snp": 10,
+    "full_cause_success": false,
+    "causal_gamma_log_or": 0.1379,
+    "causal_gamma_95ci_low": 0.0311,
+    "causal_gamma_95ci_high": 0.2353,
+    "causal_or": 1.1479,
+    "causal_or_95ci_low": 1.0316,
+    "causal_or_95ci_high": 1.2652,
+    "caveat": "Full CAUSE model comparison requires genome-wide summary statistics (>100k variants). With only 10 instruments, we fitted the causal model separately and report the gamma posterior as a sensitivity estimate."
+  },
+  "mr_clust": {
+    "status": "completed",
+    "n_snp": 10,
+    "n_clusters": 2,
+    "bic_best": -3.3167,
+    "log_likelihood_best": 5.1453,
+    "clusters": [
+      {
+        "cluster": 1,
+        "cluster_class": "Causal",
+        "n": 6,
+        "mean_wald_ratio": 0.263,
+        "snps": "rs114904431, rs1246642, rs2273500, rs2395191, rs4488938, rs9788721"
+      },
+      {
+        "cluster": 2,
+        "cluster_class": "Null",
+        "n": 4,
+        "mean_wald_ratio": -0.0302,
+        "snps": "rs11525583, rs1512281, rs34944514, rs3822479"
+      }
+    ],
+    "interpretation": "MR-Clust identified two clusters: a dominant causal cluster (6 SNPs, mean Wald ratio 0.26) and a null cluster (4 SNPs, mean Wald ratio -0.03), consistent with SNP-level heterogeneity."
+  },
+  "bapc": {
+    "status": "completed_frequentist_apc",
+    "model": "Frequentist APC model (log(cases+1) ~ s(age) + s(period) + s(cohort)) with bootstrap 95% CIs; INLA unavailable",
+    "base_year": 2021,
+    "base_observed_cases": 3613136.3631,
+    "projection_2035": {
+      "year": 2035,
+      "predicted_cases_mean": 4804195.5236,
+      "predicted_cases_95ci_low": 4366944.3511,
+      "predicted_cases_95ci_high": 6342753.9319,
+      "percent_change_from_2021": 32.96
+    },
+    "projection_2050": {
+      "year": 2050,
+      "predicted_cases_mean": 6253326.1235,
+      "predicted_cases_95ci_low": 5476628.3016,
+      "predicted_cases_95ci_high": 10450310.6026,
+      "percent_change_from_2021": 73.07
+    },
+    "caveat": "Full Bayesian APC with R-INLA could not be run because the INLA Windows binary is missing from the local installation. The frequentist APC model with bootstrap CIs provides a robust alternative."
+  },
+  "serpine1_pqtl_mr": {
+    "status": "completed",
+    "pqtl_dataset": "prot-c-2925_9_1",
+    "exposure": "PAI-1 (SERPINE1)",
+    "n_instruments": 5,
+    "lead_snp": "rs7860931",
+    "mr_results": {
+      "ivw": {
+        "beta": 0.0122,
+        "se": 0.0302,
+        "pval": 0.6856,
+        "or": 1.0123,
+        "nsnp": 5
+      },
+      "weighted_median": {
+        "beta": -0.0116,
+        "se": 0.0253,
+        "pval": 0.6477,
+        "or": 0.9885,
+        "nsnp": 5
+      },
+      "mr_egger": {
+        "beta": 0.0627,
+        "se": 0.1541,
+        "pval": 0.7113,
+        "or": 1.0647,
+        "nsnp": 5
+      }
+    },
+    "pleiotropy": {
+      "egger_intercept": -0.0144,
+      "se": 0.043,
+      "pval": 0.759
+    },
+    "heterogeneity": {
+      "ivw_Q": 10.6615,
+      "ivw_Q_df": 4,
+      "ivw_Q_pval": 0.0306
+    },
+    "interpretation": "Genetically predicted circulating PAI-1 (SERPINE1 protein) was not associated with heart failure risk (IVW OR 1.01, 95% CI 0.95-1.07, P=0.69), whereas cis-eQTL drug-target MR suggested that lower SERPINE1 expression protects against HF (OR 0.78, P=0.009). We interpret this discrepancy as evidence that the HF-relevant biology is driven by tissue-specific SERPINE1 gene expression (e.g., cardiac, pulmonary, or vascular endothelium) and local PAI-1 activity, rather than by circulating PAI-1 protein measured in plasma. Plasma PAI-1 is subject to post-translational regulation, clearance, and non-cardiac sources, and therefore may be a poor surrogate for the local fibrotic/coagulopathic actions linking COPD to HF. This supports SERPINE1 as a candidate drug target while cautioning against using plasma PAI-1 as a biomarker proxy for target engagement in HF trials.",
+    "mechanistic_insight": "Plasma PAI-1 cis-pQTL effect is decoupled from HF risk, implying local/tissue-specific SERPINE1 regulation drives cardiopulmonary pathophysiology."
+  },
+  "phewas_serpine1": {
+    "status": "completed",
+    "snp": "rs7860931",
+    "source": "IEU OpenGWAS PheWAS (PhenoScanner unavailable)",
+    "n_associations_p_lt_1e-3": 49,
+    "n_associations_p_lt_1e-5": 1,
+    "top_association": {
+      "trait": "PAI-1",
+      "beta": -0.274,
+      "se": 0.053,
+      "p": 2.86e-07
+    },
+    "cardiovascular_associations_at_p_lt_1e-5": 0,
+    "note": "The lead SERPINE1 cis-pQTL SNP showed no cardiovascular phenotype associations at P<1e-5 in IEU OpenGWAS, supporting specificity for PAI-1."
+  },
+  "asian_mr": {
+    "status": "completed_updated",
+    "note": "Re-run using ancestry-matched East Asian exposure (BBJ COPD, bbj-a-103) and outcome (BBJ Congestive heart failure, bbj-a-109). The previous analysis used a European HF outcome for an Asian exposure.",
+    "exposure_id": "bbj-a-103",
+    "outcome_id": "bbj-a-109",
+    "outcome_trait": "Congestive heart failure",
+    "population": "East Asian",
+    "n_instruments": 7,
+    "n_harmonised": 6,
+    "n_case_outcome": 9413,
+    "n_control_outcome": 203040,
+    "n_total_outcome": 212453,
+    "mr_results": {
+      "ivw": {
+        "beta": -0.0694,
+        "se": 0.0489,
+        "pval": 0.1554,
+        "or": 0.933,
+        "or_lci95": 0.848,
+        "or_uci95": 1.027,
+        "nsnp": 6
+      },
+      "weighted_median": {
+        "beta": -0.0417,
+        "se": 0.0491,
+        "pval": 0.3957,
+        "or": 0.959,
+        "or_lci95": 0.871,
+        "or_uci95": 1.056,
+        "nsnp": 6
+      },
+      "mr_egger": {
+        "beta": 0.2131,
+        "se": 0.2486,
+        "pval": 0.4395,
+        "or": 1.238,
+        "or_lci95": 0.76,
+        "or_uci95": 2.015,
+        "nsnp": 6
+      }
+    },
+    "pleiotropy": {
+      "egger_intercept": -0.0569,
+      "se": 0.0492,
+      "pval": 0.3114
+    },
+    "heterogeneity": {
+      "ivw_Q": 8.7762,
+      "ivw_Q_df": 5,
+      "ivw_Q_pval": 0.1183
+    },
+    "interpretation": "Ancestry-matched East Asian validation did not show a statistically significant causal effect (IVW OR 0.93, 95% CI 0.85-1.03, P=0.16), but was limited to 6 genome-wide significant instruments and modest HF case numbers (n=9,413). The point estimate was directionally null, and confidence intervals were compatible with either no effect or a modest protective association. This suggests either genuine cross-ancestry heterogeneity, lower power, or phenotype-definition differences between COPD and congestive heart failure in BBJ."
+  },
+  "single_cell": {
+    "status": "completed_on_hlca_core_healthy",
+    "datasets": [
+      "Human Lung Cell Atlas (HLCA) core healthy atlas from CELLxGENE (584,944 cells, 27,402 genes)",
+      "GSE136831 and GSE183852 were not reanalysed locally because raw GEO downloads repeatedly failed and the objects lacked spliced/unspliced layers for RNA velocity"
+    ],
+    "environment": "Portable Python 3.10 with cellphonedb 5.0.1, scanpy 1.11.5, anndata 0.11.4",
+    "methods": {
+      "subsampling": "Up to 500 cells per ann_level_3 label from HLCA core, total 11,363 cells across 24 types (cells with missing annotations excluded); raw counts from adata.raw.X",
+      "cellphonedb": "CellPhoneDB v5.0.1 statistical analysis via Python API (cpdb_statistical_analysis_method.call), 100 permutations, threshold 0.1, 4 threads",
+      "custom_serpine1_score": "Curated SERPINE1/PAI-1 partners: LRP1, PLAUR, ITGAV, ITGB3, VTN, PLAU; mean expression product and co-expression percent computed per sender-receiver pair",
+      "rna_velocity": "Not feasible: GEO uploads and HLCA core object do not contain spliced/unspliced count layers"
+    },
+    "key_findings": {
+      "cellphonedb_general": "Top significant interactions include macrophage/endothelial signals: FTL_SCARA5, FTH1_SCARA5, LCN2_SLC22A17, APP_CD74, CCL21_CCR7, CXCL8_ACKR1, APOE_TREM2",
+      "serpine1_expression": "SERPINE1 highest in capillary endothelial cells, myofibroblasts, and fibroblasts",
+      "serpine1_top_interactions": [
+        "SERPINE1 -> PLAUR from EC capillary/fibroblasts to monocytes/macrophages",
+        "SERPINE1 -> LRP1 from EC capillary/fibroblasts to fibroblasts/macrophages",
+        "SERPINE1 -> ITGAV from EC capillary to EC arterial/smooth muscle"
+      ],
+      "interpretation": "Endothelial and fibroblast-derived SERPINE1/PAI-1 may signal to myeloid and fibroblast populations via PLAUR and LRP1, supporting a local inflammatory-fibrotic axis"
+    },
+    "limitations": [
+      "HLCA core contains healthy cells only; disease-state (COPD/IPF) communication awaits the full disease atlas or raw GEO matrices",
+      "CellPhoneDB curated database does not include SERPINE1/PAI-1, so SERPINE1-specific scores are custom and not statistically tested by CellPhoneDB",
+      "RNA velocity cannot be computed from the available GEO uploads"
+    ],
+    "deliverables": [
+      "single_cell_hlca_analysis.py: complete reproducible workflow",
+      "results/single_cell_hlca/: CellPhoneDB outputs, custom SERPINE1 LR scores, UMAP and dot plots, rna_velocity_note.txt"
+    ]
+  }
+}

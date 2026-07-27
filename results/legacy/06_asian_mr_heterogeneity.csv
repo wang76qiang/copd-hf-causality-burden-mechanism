@@ -1,0 +1,3 @@
+id.exposure,id.outcome,outcome,exposure,method,Q,Q_df,Q_pval
+bbj-a-103,bbj-a-109,Congestive heart failure || id:bbj-a-109,Chronic obstructive pulmonary disease || id:bbj-a-103,MR Egger,6.573133015064421,4,0.16024034366522677
+bbj-a-103,bbj-a-109,Congestive heart failure || id:bbj-a-109,Chronic obstructive pulmonary disease || id:bbj-a-103,Inverse variance weighted,8.776155505356915,5,0.11833262024521081

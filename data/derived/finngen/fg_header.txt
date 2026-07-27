@@ -1,0 +1,1 @@
+#chrom	pos	ref	alt	rsids	nearest_genes	pval	mlogp	beta	sebeta	af_alt	af_alt_cases	af_alt_controls

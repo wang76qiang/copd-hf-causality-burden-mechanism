@@ -1,0 +1,72 @@
+TwoSampleMR version 0.7.9 
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Number of instruments: 10 
+Estimating CAUSE parameters with  10  variants.
+1 0.146654 
+2 0.0006869673 
+3 3.065973e-06 
+4 1.30046e-08 
+Warning message:
+In est_cause_params(dat, variants = dat$snp) :
+  Fewer than 100,000 variants are being used to estimate parametrs. This can cause problems and is not recomended. You are using 10 variants.
+
+Estimating CAUSE posteriors using  10  variants.
+Fitting confounder only model.
+Setting ranges
+Refining grid
+Fitting causal model.
+Setting ranges
+Refining grid
+Full CAUSE fit failed: non-numeric argument to binary operator 
+Fitting causal model separately for sensitivity estimate...
+Setting ranges
+Refining grid
+Causal model gamma (log-OR): 0.1379 
+95% CI: 0.0311 to 0.2353 
+OR: 1.148 (95% CI 1.032-1.265 )
+$n_snp
+[1] 10
+
+$params_converged
+[1] TRUE
+
+$params_rho
+[1] 0.1473441
+
+$full_cause_success
+[1] FALSE
+
+$fallback_causal_model
+[1] TRUE
+
+$causal_gamma_log_or
+[1] 0.1379203
+
+$causal_gamma_95ci_low
+[1] 0.03112716
+
+$causal_gamma_95ci_high
+[1] 0.2352506
+
+$causal_or
+[1] 1.147884
+
+$causal_or_95ci_low
+[1] 1.031617
+
+$causal_or_95ci_high
+[1] 1.265226
+
+$caveat
+[1] "Full CAUSE model comparison (causal vs sharing) could not be performed because fewer than 100,000 genome-wide variants were available. The causal-model gamma is reported as a sensitivity estimate only."
+

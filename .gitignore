@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+work/
+data_downloads/
+logs/
+data/raw/
+*.h5ad

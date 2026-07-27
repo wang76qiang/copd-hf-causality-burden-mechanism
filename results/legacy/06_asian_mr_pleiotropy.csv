@@ -1,0 +1,2 @@
+id.exposure,id.outcome,outcome,exposure,egger_intercept,se,pval
+bbj-a-103,bbj-a-109,Congestive heart failure || id:bbj-a-109,Chronic obstructive pulmonary disease || id:bbj-a-103,-0.05694862624669339,0.04918469714229307,0.3113503674811708

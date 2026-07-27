@@ -1,0 +1,15 @@
+cell_type,gene,n_case_donors,n_ctrl_donors,case_mean,ctrl_mean,logFC_donor,welch_p,dataset,bonf_p
+macrophage,THBS1,9,7,0.83,0.832,-0.003,0.9931596191139891,COPD lung,1.0
+macrophage,CD163,9,7,1.455,1.443,0.012,0.9392653317733459,COPD lung,1.0
+macrophage,SERPINE1,9,7,0.112,0.153,-0.041,0.49257458229577633,COPD lung,1.0
+monocyte,S100A8,9,7,1.801,1.5,0.301,0.12950932370579124,COPD lung,1.0
+monocyte,S100A12,9,7,0.803,0.648,0.156,0.3128048003113904,COPD lung,1.0
+monocyte,F13A1,9,7,0.532,0.241,0.291,0.07145302863918798,COPD lung,1.0
+fibroblast,SERPINE1,9,7,0.512,0.448,0.064,0.6271220425059645,COPD lung,1.0
+capillary endothelial cell,SERPINE1,9,7,0.941,1.167,-0.226,0.16217773513477016,COPD lung,1.0
+fibroblast of cardiac tissue,SERPINE1,52,18,0.302,0.377,-0.075,0.48022737786064673,failing heart (fibroblast),1.0
+fibroblast of cardiac tissue,ITGAV,52,18,0.399,0.32,0.079,0.06351949237736994,failing heart (fibroblast),0.8892728932831792
+fibroblast of cardiac tissue,THBS1,52,18,0.241,0.222,0.02,0.6859977362243002,failing heart (fibroblast),1.0
+endothelial cell,SERPINE1,52,18,0.114,0.107,0.007,0.8326968004820225,failing heart (endothelial),1.0
+endothelial cell,ITGAV,52,18,0.423,0.315,0.108,0.0001900491209948,failing heart (endothelial),0.0026606876939272
+endothelial cell,THBS1,52,18,0.015,0.02,-0.006,0.20651747839361348,failing heart (endothelial),1.0

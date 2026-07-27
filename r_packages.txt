@@ -1,0 +1,26 @@
+# R dependencies (R >= 4.4; BAPC module used R 4.6.1 + INLA 24.12.11)
+# CRAN:
+data.table
+readr
+readxl
+jsonlite
+dplyr
+tidyverse
+ggplot2
+MendelianRandomization
+MVMR
+RadialMR
+MRPRESSO
+mr.raps
+BAPC            # requires INLA: install.packages("INLA", repos="https://inla.r-inla-download.org/R/stable")
+# Bioconductor:
+limma
+GEOquery
+Biobase
+# GitHub / project sources:
+ieugwasr        # r-universe: mrcieu
+TwoSampleMR     # r-universe: mrcieu
+cause           # github: jean997/cause
+mrclust         # github: cnfoley/mrclust
+phenoscanner    # github: phenoscanner/phenoscanner
+coloc           # optional; the drug-target module ships a manual Wakefield-ABF reimplementation

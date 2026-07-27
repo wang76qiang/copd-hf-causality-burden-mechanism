@@ -1,0 +1,7 @@
+framework,copd_prevalence_assumed,scenario,effect_measure,effect,PAF,attributable_HF_cases_2021,note
+GBD comparative risk assessment,0.03,low,implied RR,3.135920868831309,0.060218939385,3613136.3631,implied PAF = GBD attributable / assumed 60M total HF
+GBD comparative risk assessment,0.05,central,implied RR,2.2815525212987855,0.060218939385,3613136.3631,implied PAF = GBD attributable / assumed 60M total HF
+GBD comparative risk assessment,0.1,high,implied RR,1.6407762606493927,0.060218939385,3613136.3631,implied PAF = GBD attributable / assumed 60M total HF
+MR + Levin PAF,0.03,low,OR (IVW FE),1.1507944875580642,0.0045034617107147885,270207.7026428873,PAF = p(OR-1)/(1+p(OR-1)); cases vs 60M total HF
+MR + Levin PAF,0.05,central,OR (IVW FE),1.1507944875580642,0.007483302340816935,448998.1404490161,PAF = p(OR-1)/(1+p(OR-1)); cases vs 60M total HF
+MR + Levin PAF,0.1,high,OR (IVW FE),1.1507944875580642,0.014855436955490986,891326.2173294591,PAF = p(OR-1)/(1+p(OR-1)); cases vs 60M total HF

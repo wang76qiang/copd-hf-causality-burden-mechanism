@@ -1,0 +1,191 @@
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+In readLines("E:/COPD+HF/V8_TopJournal_RealData/ieu_token.txt") :
+  incomplete final line found on 'E:/COPD+HF/V8_TopJournal_RealData/ieu_token.txt'
+ebi-a-GCST009541 found: Heart failure 
+ebi-a-GCST011365 found: Myocardial infarction 
+ebi-a-GCST90018807 found: Chronic obstructive pulmonary disease 
+bbj-a-103 found: Chronic obstructive pulmonary disease 
+bbj-a-109 found: Congestive heart failure 
+bbj-a-111 found: Drug eruption 
+bbj-a-113 found: Endometrial cancer 
+bbj-a-114 found: Endometriosis 
+bbj-a-115 found: Epilepsy 
+bbj-a-117 found: Esophageal cancer 
+ukb-a-270 found: Impedance of leg (right) 
+ukb-a-271 found: Impedance of leg (left) 
+ukb-a-272 found: Impedance of arm (right) 
+ukb-a-273 found: Impedance of arm (left) 
+ukb-a-274 found: Leg fat percentage (right) 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-600  ->  met-a-600
+ieu-a-600 found: X-10346 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-601  ->  met-a-601
+ieu-a-601 found: ADpSGEGDFXAEGGGVR* 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-602  ->  met-a-602
+ieu-a-602 found: 1-eicosatrienoylglycerophosphocholine* 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-603  ->  met-a-603
+ieu-a-603 found: 1-docosahexaenoylglycerophosphocholine* 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-604  ->  met-a-604
+ieu-a-604 found: X-12405 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-605  ->  met-a-605
+ieu-a-605 found: X-12407 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-606  ->  met-a-606
+ieu-a-606 found: X-12428 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-607  ->  met-a-607
+ieu-a-607 found: 1-eicosadienoylglycerophosphocholine* 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-608  ->  met-a-608
+ieu-a-608 found: X-12435 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-609  ->  met-a-609
+ieu-a-609 found: X-12441--12-hydroxyeicosatetraenoate (12-HETE) 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-610  ->  met-a-610
+ieu-a-610 found: X-12442--5,8-tetradecadienoate 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-611  ->  met-a-611
+ieu-a-611 found: X-12443 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-612  ->  met-a-612
+ieu-a-612 found: X-12450 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-613  ->  met-a-613
+ieu-a-613 found: X-12456 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-614  ->  met-a-614
+ieu-a-614 found: X-12465 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-615  ->  met-a-615
+ieu-a-615 found: Octanoylcarnitine 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-616  ->  met-a-616
+ieu-a-616 found: Alpha-hydroxyisovalerate 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-617  ->  met-a-617
+ieu-a-617 found: N-acetylthreonine 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-618  ->  met-a-618
+ieu-a-618 found: Decanoylcarnitine 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-619  ->  met-a-619
+ieu-a-619 found: 1-palmitoylglycerophosphocholine 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-620  ->  met-a-620
+ieu-a-620 found: 1-heptadecanoylglycerophosphocholine 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-621  ->  met-a-621
+ieu-a-621 found: 1-oleoylglycerophosphocholine 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-622  ->  met-a-622
+ieu-a-622 found: 1-stearoylglycerophosphocholine 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-623  ->  met-a-623
+ieu-a-623 found: 5-dodecenoate (12:1n7) 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-624  ->  met-a-624
+ieu-a-624 found: Stearidonate (18:4n3) 
+Deprecated IDs being used? Detected numeric IDs. Trying to fix, but please note the changes below for future.
+ieu-a-625  ->  met-a-625
+ieu-a-625 found: 10-heptadecenoate (17:1n7) 
+                   id                                          trait
+1    ebi-a-GCST009541                                  Heart failure
+2    ebi-a-GCST011365                          Myocardial infarction
+3  ebi-a-GCST90018807          Chronic obstructive pulmonary disease
+4           bbj-a-103          Chronic obstructive pulmonary disease
+5           bbj-a-109                       Congestive heart failure
+6           bbj-a-111                                  Drug eruption
+7           bbj-a-113                             Endometrial cancer
+8           bbj-a-114                                  Endometriosis
+9           bbj-a-115                                       Epilepsy
+10          bbj-a-117                              Esophageal cancer
+11          ukb-a-270                       Impedance of leg (right)
+12          ukb-a-271                        Impedance of leg (left)
+13          ukb-a-272                       Impedance of arm (right)
+14          ukb-a-273                        Impedance of arm (left)
+15          ukb-a-274                     Leg fat percentage (right)
+16          met-a-600                                        X-10346
+17          met-a-601                             ADpSGEGDFXAEGGGVR*
+18          met-a-602         1-eicosatrienoylglycerophosphocholine*
+19          met-a-603        1-docosahexaenoylglycerophosphocholine*
+20          met-a-604                                        X-12405
+21          met-a-605                                        X-12407
+22          met-a-606                                        X-12428
+23          met-a-607          1-eicosadienoylglycerophosphocholine*
+24          met-a-608                                        X-12435
+25          met-a-609 X-12441--12-hydroxyeicosatetraenoate (12-HETE)
+26          met-a-610                 X-12442--5,8-tetradecadienoate
+27          met-a-611                                        X-12443
+28          met-a-612                                        X-12450
+29          met-a-613                                        X-12456
+30          met-a-614                                        X-12465
+31          met-a-615                              Octanoylcarnitine
+32          met-a-616                       Alpha-hydroxyisovalerate
+33          met-a-617                              N-acetylthreonine
+34          met-a-618                              Decanoylcarnitine
+35          met-a-619               1-palmitoylglycerophosphocholine
+36          met-a-620           1-heptadecanoylglycerophosphocholine
+37          met-a-621                  1-oleoylglycerophosphocholine
+38          met-a-622                1-stearoylglycerophosphocholine
+39          met-a-623                         5-dodecenoate (12:1n7)
+40          met-a-624                          Stearidonate (18:4n3)
+41          met-a-625                     10-heptadecenoate (17:1n7)
+   sample_size ncase ncontrol population      author year
+1       977323 47309   930014   European      Shah S 2020
+2       395795 14825    44000   European Hartiala JA 2021
+3       468475 13530   454945   European    Sakaue S 2021
+4       204907  3315   201592 East Asian  Ishigaki K 2019
+5       212453  9413   203040 East Asian  Ishigaki K 2019
+6       210081   430   209651 East Asian  Ishigaki K 2019
+7        90730   999    89731 East Asian  Ishigaki K 2019
+8       103106   734   102372 East Asian  Ishigaki K 2019
+9       212453  2143   210310 East Asian  Ishigaki K 2019
+10      197045  1300   195745 East Asian  Ishigaki K 2019
+11      331301    NA       NA   European       Neale 2017
+12      331296    NA       NA   European       Neale 2017
+13      331279    NA       NA   European       Neale 2017
+14      331292    NA       NA   European       Neale 2017
+15      331296    NA       NA   European       Neale 2017
+16        4207    NA       NA   European        Shin 2014
+17        3939    NA       NA   European        Shin 2014
+18        7809    NA       NA   European        Shin 2014
+19        7798    NA       NA   European        Shin 2014
+20        6676    NA       NA   European        Shin 2014
+21        2814    NA       NA   European        Shin 2014
+22        1439    NA       NA   European        Shin 2014
+23        6892    NA       NA   European        Shin 2014
+24         231    NA       NA   European        Shin 2014
+25        2761    NA       NA   European        Shin 2014
+26        7780    NA       NA   European        Shin 2014
+27        5357    NA       NA   European        Shin 2014
+28        6432    NA       NA   European        Shin 2014
+29        4774    NA       NA   European        Shin 2014
+30        5883    NA       NA   European        Shin 2014
+31        7790    NA       NA   European        Shin 2014
+32        7668    NA       NA   European        Shin 2014
+33        6909    NA       NA   European        Shin 2014
+34        7766    NA       NA   European        Shin 2014
+35        7803    NA       NA   European        Shin 2014
+36        7422    NA       NA   European        Shin 2014
+37        7812    NA       NA   European        Shin 2014
+38        7817    NA       NA   European        Shin 2014
+39        7770    NA       NA   European        Shin 2014
+40        7775    NA       NA   European        Shin 2014
+41        7795    NA       NA   European        Shin 2014

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or the associated results, please cite the manuscript."
+title: "Causal liability to COPD increases heart failure risk and explains a growing global burden: triangulated evidence from Mendelian randomization, GBD 2021 and multiscale transcriptomics -- reproducibility package"
+authors:
+  - family-names: Fang
+    given-names: Hongjuan
+year: 2026
+license: MIT
+repository-code: "https://github.com/fanghongjuan/copd-hf-triangulation"
+keywords:
+  - COPD
+  - heart failure
+  - Mendelian randomization
+  - Global Burden of Disease
+  - single-cell transcriptomics
+  - SERPINE1

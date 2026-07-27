@@ -1,0 +1,18 @@
+{
+  "snp": "rs7860931",
+  "source": "IEU OpenGWAS PheWAS",
+  "n_associations_p_lt_1e-3": 49,
+  "n_associations_p_lt_1e-5": 1,
+  "top_associations": [
+    {
+      "id": "prot-c-2925_9_1",
+      "trait": "PAI-1",
+      "beta": -0.2738,
+      "se": 0.053,
+      "p": 2.856e-07,
+      "n": 997
+    }
+  ],
+  "cardiovascular_relevant": [],
+  "note": "PhenoScanner was unreachable; IEU OpenGWAS PheWAS provided real association data across IEU traits."
+}

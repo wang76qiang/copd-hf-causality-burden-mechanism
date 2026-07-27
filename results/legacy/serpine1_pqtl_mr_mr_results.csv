@@ -1,0 +1,4 @@
+"id.exposure","id.outcome","outcome","exposure","method","nsnp","b","se","pval"
+"prot-c-2925_9_1","ebi-a-GCST009541","Heart failure || id:ebi-a-GCST009541","PAI-1 || id:prot-c-2925_9_1","Inverse variance weighted",5,0.0122410523789828,0.0302386721205962,0.68561388312187
+"prot-c-2925_9_1","ebi-a-GCST009541","Heart failure || id:ebi-a-GCST009541","PAI-1 || id:prot-c-2925_9_1","Weighted median",5,-0.0115684839549254,0.0253154333942396,0.647690043220096
+"prot-c-2925_9_1","ebi-a-GCST009541","Heart failure || id:ebi-a-GCST009541","PAI-1 || id:prot-c-2925_9_1","MR Egger",5,0.0627098728129024,0.154093063991437,0.711331289329288

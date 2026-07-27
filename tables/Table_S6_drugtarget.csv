@@ -1,0 +1,13 @@
+analysis,tissue_or_dataset,method,nsnp,OR(95%CI),pval,PP.H3,PP.H4,note,date
+SERPINE1 cis-eQTL drug-target MR (P<5e-6, pre-specified),GTEx v8 Whole Blood (QTD000356),not estimable,0,NA,NA,0.0041,0.0033,"min cis-p=6.8e-4 > 5e-6，无可用工具（真实阴性）",2026-07-26
+SERPINE1 cis-eQTL drug-target MR (P<5e-6, pre-specified),GTEx v8 Lung (QTD000271),not estimable,0,NA,NA,0.0034,0.0021,"min cis-p=6.9e-3",2026-07-26
+SERPINE1 cis-eQTL drug-target MR (P<5e-6, pre-specified),GTEx v8 Artery Aorta (QTD000131),not estimable,0,NA,NA,0.0159,0.0038,"min cis-p=2.4e-5",2026-07-26
+SERPINE1 cis-eQTL drug-target MR (P<5e-6, pre-specified),GTEx v8 Artery Coronary (QTD000136),not estimable,0,NA,NA,0.0076,0.0032,"min cis-p=3.9e-4",2026-07-26
+SERPINE1 cis-eQTL drug-target MR (P<5e-6, pre-specified),GTEx v8 Heart Atrial Appendage (QTD000251),not estimable,0,NA,NA,0.0035,0.0020,"min cis-p=3.6e-3",2026-07-26
+SERPINE1 cis-eQTL drug-target MR (P<5e-6, pre-specified),GTEx v8 Heart Left Ventricle (QTD000256),not estimable,0,NA,NA,0.0038,0.0022,"min cis-p=4.5e-3",2026-07-26
+SERPINE1 cis-eQTL drug-target MR (P<5e-6, pre-specified),GTEx v8 Adipose Subcutaneous (QTD000116),not estimable,0,NA,NA,0.0092,0.0039,"min cis-p=1.1e-3",2026-07-26
+SERPINE1 cis-eQTL drug-target MR (P<5e-6, pre-specified),GTEx v8 Liver (QTD000266),not estimable,0,NA,NA,0.0042,0.0024,"min cis-p=1.6e-3",2026-07-26
+SERPINE1 cis-eQTL drug-target MR (P<5e-6),eQTLGen Whole Blood (eqtl-a-ENSG00000106366, N=31684),Wald ratio,1,0.912 (0.791-1.051),0.202,NA,NA,"唯一通过5e-6的cis工具(rs见results)；方向为保护但不显著",2026-07-26
+SERPINE1 cis-eQTL drug-target MR (P<1e-4, relaxed sensitivity),GTEx v8 Artery Aorta (QTD000131),Wald ratio,1,0.999 (0.926-1.077),0.972,NA,NA,"放宽阈值敏感性分析，仅主动脉有1个工具；无效",2026-07-26
+Colocalisation (manual coloc.abf),8 GTEx tissues,manual ABF,1723-1830,NA,NA,0.003-0.016,0.002-0.004,"所有组织PP.H4<0.01：eQTL与HF信号不共定位；与循环PAI-1 pQTL MR阴性(V8留档)一致",2026-07-26
+SERPINE1 pQTL drug-target MR (V8 legacy, archived),prot-c-2925_9_1 PAI-1 (Suhre 2019),IVW,5,1.012 (p=0.686),0.686,NA,NA,"V8既有结果，已归档legacy_archive；循环PAI-1与HF无因果关联",2026-07-05

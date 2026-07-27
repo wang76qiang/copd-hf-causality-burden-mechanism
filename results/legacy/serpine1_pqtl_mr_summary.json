@@ -1,0 +1,73 @@
+{
+  "status": "completed",
+  "pqtl_dataset": "prot-c-2925_9_1",
+  "n_instruments": 5,
+  "mr_results": [
+    {
+      "id.exposure": "prot-c-2925_9_1",
+      "id.outcome": "ebi-a-GCST009541",
+      "outcome": "Heart failure || id:ebi-a-GCST009541",
+      "exposure": "PAI-1 || id:prot-c-2925_9_1",
+      "method": "Inverse variance weighted",
+      "nsnp": 5,
+      "b": 0.0122,
+      "se": 0.0302,
+      "pval": 0.6856
+    },
+    {
+      "id.exposure": "prot-c-2925_9_1",
+      "id.outcome": "ebi-a-GCST009541",
+      "outcome": "Heart failure || id:ebi-a-GCST009541",
+      "exposure": "PAI-1 || id:prot-c-2925_9_1",
+      "method": "Weighted median",
+      "nsnp": 5,
+      "b": -0.0116,
+      "se": 0.0253,
+      "pval": 0.6477
+    },
+    {
+      "id.exposure": "prot-c-2925_9_1",
+      "id.outcome": "ebi-a-GCST009541",
+      "outcome": "Heart failure || id:ebi-a-GCST009541",
+      "exposure": "PAI-1 || id:prot-c-2925_9_1",
+      "method": "MR Egger",
+      "nsnp": 5,
+      "b": 0.0627,
+      "se": 0.1541,
+      "pval": 0.7113
+    }
+  ],
+  "pleiotropy": [
+    {
+      "id.exposure": "prot-c-2925_9_1",
+      "id.outcome": "ebi-a-GCST009541",
+      "outcome": "Heart failure || id:ebi-a-GCST009541",
+      "exposure": "PAI-1 || id:prot-c-2925_9_1",
+      "egger_intercept": -0.0144,
+      "se": 0.043,
+      "pval": 0.759
+    }
+  ],
+  "heterogeneity": [
+    {
+      "id.exposure": "prot-c-2925_9_1",
+      "id.outcome": "ebi-a-GCST009541",
+      "outcome": "Heart failure || id:ebi-a-GCST009541",
+      "exposure": "PAI-1 || id:prot-c-2925_9_1",
+      "method": "MR Egger",
+      "Q": 10.275,
+      "Q_df": 3,
+      "Q_pval": 0.0164
+    },
+    {
+      "id.exposure": "prot-c-2925_9_1",
+      "id.outcome": "ebi-a-GCST009541",
+      "outcome": "Heart failure || id:ebi-a-GCST009541",
+      "exposure": "PAI-1 || id:prot-c-2925_9_1",
+      "method": "Inverse variance weighted",
+      "Q": 10.6615,
+      "Q_df": 4,
+      "Q_pval": 0.0306
+    }
+  ]
+}

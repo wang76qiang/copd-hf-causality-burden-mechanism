@@ -1,0 +1,6 @@
+"scenario","or_target","kappa_used","power"
+"power to detect OR=1.15 at current N (kappa from BBJ 9413/203040)",1.15,0.0443062700926793,0.982395268556559
+"power to detect OR=1.15, sensitivity kappa=0.05",1.15,0.05,0.99052246408377
+"power to detect OR=1.10 at current N",1.1,0.0443062700926793,0.791825034967451
+"power to detect OR=1.20 at current N",1.2,0.0443062700926793,0.999587206142518
+"power to detect the observed European IVW OR=1.151 at current N",1.150794,0.0443062700926793,0.983249207977353

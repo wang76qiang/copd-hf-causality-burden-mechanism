@@ -1,0 +1,22 @@
+{
+  "n_snp": 10,
+  "n_clusters": 2,
+  "bic_best": -3.3167,
+  "log_likelihood_best": 5.1453,
+  "clusters": [
+    {
+      "cluster": 1,
+      "cluster_class": "1",
+      "n": 6,
+      "mean_wald_ratio": 0.263,
+      "snps": "rs114904431, rs1246642, rs2273500, rs2395191, rs4488938, rs9788721"
+    },
+    {
+      "cluster": 2,
+      "cluster_class": "Null",
+      "n": 4,
+      "mean_wald_ratio": -0.0302,
+      "snps": "rs11525583, rs1512281, rs34944514, rs3822479"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+OpenGWAS updates:
+  Date: 2024-05-17
+  [>] OpenGWAS is growing!
+  [>] Please take 2 minutes to give us feedback -
+  [>] It will help directly shape our emerging roadmap
+  [>] https://forms.office.com/e/eSr7EFAfCG
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+In readLines("E:/COPD+HF/V8_TopJournal_RealData/ieu_token.txt") :
+  incomplete final line found on 'E:/COPD+HF/V8_TopJournal_RealData/ieu_token.txt'
+Error in api_query("gwasinfo", opengwas_jwt = opengwas_jwt, ...) : 
+  The query to OpenGWAS exceeded 300 seconds and timed out. Potential reasons:
+				- You have a bad internet connection
+				- The query was very large and it timed out
+				- You have maxed out your allowance, and kept submitting requests, which led to your IP address being temporarily blocked. See here for details: https://api.opengwas.io/api/#allowance
+Calls: gwasinfo ... %>% -> get_query_content -> <Anonymous> -> api_query
+Execution halted

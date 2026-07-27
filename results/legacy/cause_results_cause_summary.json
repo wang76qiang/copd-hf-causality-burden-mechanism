@@ -1,0 +1,14 @@
+{
+  "n_snp": 10,
+  "params_converged": true,
+  "params_rho": 0.1473,
+  "full_cause_success": false,
+  "fallback_causal_model": true,
+  "causal_gamma_log_or": 0.1379,
+  "causal_gamma_95ci_low": 0.0311,
+  "causal_gamma_95ci_high": 0.2353,
+  "causal_or": 1.1479,
+  "causal_or_95ci_low": 1.0316,
+  "causal_or_95ci_high": 1.2652,
+  "caveat": "Full CAUSE model comparison (causal vs sharing) could not be performed because fewer than 100,000 genome-wide variants were available. The causal-model gamma is reported as a sensitivity estimate only."
+}

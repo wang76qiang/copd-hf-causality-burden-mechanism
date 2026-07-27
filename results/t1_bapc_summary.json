@@ -1,0 +1,58 @@
+{
+ "model_primary": "BAPC (R BAPC 0.0.37 + INLA 24.12.11, R 4.6.1), Poisson APC, RW2 age/period/cohort + iid overdispersion; count-space (offset=1) so demographic+epidemiologic trends are propagated jointly",
+ "age_groups": "15-19 to 95+ (5-yr groups; <15 structurally zero in GBD)",
+ "observed_cases_2021": 3613136.3631,
+ "fitted_cases_2021": 3612983.50432062,
+ "projection_primary_count_space": {
+  "2030": {
+   "mean": 5016878.93769627,
+   "lower": 4621479.64877607,
+   "upper": 5412278.22661647,
+   "pct_change_vs_2021": 38.85695663145952
+  },
+  "2035": {
+   "mean": 6132447.82635716,
+   "lower": 5307693.09199774,
+   "upper": 6957202.56071657,
+   "pct_change_vs_2021": 69.73362372188012
+  },
+  "2040": {
+   "mean": 7455950.59469973,
+   "lower": 5924518.10691057,
+   "upper": 8987383.08248889,
+   "pct_change_vs_2021": 106.36547567359393
+  },
+  "2050": {
+   "mean": 10934160.8410546,
+   "lower": 6601845.74100498,
+   "upper": 15266475.9411043,
+   "pct_change_vs_2021": 202.63522731224435
+  }
+ },
+ "projection_sensitivity_rate_space_frozen_pop2021": {
+  "2035": {
+   "mean": 4527741.28605155,
+   "lower": 3931670.54736407,
+   "upper": 5123812.02473903,
+   "pct_change_vs_2021": 25.32383783029879
+  },
+  "2050": {
+   "mean": 6549168.56657954,
+   "lower": 3902243.8022714,
+   "upper": 9196093.33088768,
+   "pct_change_vs_2021": 81.27514084998893
+  }
+ },
+ "frequentist_apc_existing": {
+  "2035_mean": 4804195.5236,
+  "2050_mean": 6253326.1235,
+  "2035_pct": 32.96,
+  "2050_pct": 73.07
+ },
+ "comparison_note": "The existing frequentist APC (+33% by 2035, +73% by 2050) lies between the two Bayesian variants: the count-space BAPC (+70%/+203%) compounds per-age RW2 growth (upper bound, wide CrI), while the rate-space BAPC with frozen 2021 population (+25%/+81%) isolates the pure epidemiologic signal and closely matches the frequentist 2050 estimate (6.55M vs 6.25M).",
+ "caveats": [
+  "No UN/WPP population forecasts available locally; count-space model subsumes demographic growth, rate-space sensitivity freezes 2021 population.",
+  "95% CrI approximated as mean +/- 1.96*SD (Gaussian); totals assume independence across ages.",
+  "GBD non-integer point estimates rounded to integers for Poisson likelihood."
+ ]
+}

@@ -1,0 +1,73 @@
+TwoSampleMR version 0.7.9 
+
+ [>] New authentication requirements: https://mrcieu.github.io/ieugwasr/articles/guide.html#authentication.
+ [>] Major upgrades to our servers completed to improve service and stability.
+ [>] We need your help to shape our emerging roadmap!
+     Please take 2 minutes to give us feedback -
+     https://forms.office.com/e/eSr7EFAfCG
+OpenGWAS updates:
+  Date: 2024-05-17
+  [>] OpenGWAS is growing!
+  [>] Please take 2 minutes to give us feedback -
+  [>] It will help directly shape our emerging roadmap
+  [>] https://forms.office.com/e/eSr7EFAfCG
+
+Attaching package: 'ieugwasr'
+
+The following object is masked from 'package:TwoSampleMR':
+
+    ld_matrix
+
+Warning message:
+In readLines("E:/COPD+HF/V8_TopJournal_RealData/ieu_token.txt") :
+  incomplete final line found on 'E:/COPD+HF/V8_TopJournal_RealData/ieu_token.txt'
+IEU token found; querying OpenGWAS for SERPINE1 pQTL instruments...
+Token set. Validating...
+Deprecated. Use `get_opengwas_jwt()` instead. See https://mrcieu.github.io/ieugwasr/articles/guide.html#authentication for more information.
+NULL
+Found 5 SERPINE1 cis-pQTL instruments.
+Extracting data for 5 SNP(s) from 1 GWAS(s)
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+Harmonising PAI-1 || id:prot-c-2925_9_1 (prot-c-2925_9_1) and Heart failure || id:ebi-a-GCST009541 (ebi-a-GCST009541)
+Analysing 'prot-c-2925_9_1' on 'ebi-a-GCST009541'
+$status
+[1] "completed"
+
+$pqtl_dataset
+[1] "prot-c-2925_9_1"
+
+$n_instruments
+[1] 5
+
+$mr_results
+      id.exposure       id.outcome                              outcome
+1 prot-c-2925_9_1 ebi-a-GCST009541 Heart failure || id:ebi-a-GCST009541
+2 prot-c-2925_9_1 ebi-a-GCST009541 Heart failure || id:ebi-a-GCST009541
+3 prot-c-2925_9_1 ebi-a-GCST009541 Heart failure || id:ebi-a-GCST009541
+                     exposure                    method nsnp           b
+1 PAI-1 || id:prot-c-2925_9_1 Inverse variance weighted    5  0.01224105
+2 PAI-1 || id:prot-c-2925_9_1           Weighted median    5 -0.01156848
+3 PAI-1 || id:prot-c-2925_9_1                  MR Egger    5  0.06270987
+          se      pval
+1 0.03023867 0.6856139
+2 0.02531543 0.6476900
+3 0.15409306 0.7113313
+
+$pleiotropy
+      id.exposure       id.outcome                              outcome
+1 prot-c-2925_9_1 ebi-a-GCST009541 Heart failure || id:ebi-a-GCST009541
+                     exposure egger_intercept         se      pval
+1 PAI-1 || id:prot-c-2925_9_1     -0.01443014 0.04295467 0.7590404
+
+$heterogeneity
+      id.exposure       id.outcome                              outcome
+1 prot-c-2925_9_1 ebi-a-GCST009541 Heart failure || id:ebi-a-GCST009541
+2 prot-c-2925_9_1 ebi-a-GCST009541 Heart failure || id:ebi-a-GCST009541
+                     exposure                    method        Q Q_df
+1 PAI-1 || id:prot-c-2925_9_1                  MR Egger 10.27498    3
+2 PAI-1 || id:prot-c-2925_9_1 Inverse variance weighted 10.66150    4
+      Q_pval
+1 0.01636769
+2 0.03064355
+

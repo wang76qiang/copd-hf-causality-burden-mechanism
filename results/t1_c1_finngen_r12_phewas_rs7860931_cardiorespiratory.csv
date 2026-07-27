@@ -1,0 +1,2 @@
+"phenocode","phenotype","category","pval","beta_altC","sebeta","mlogp","maf","n_case","n_control","bonferroni_sig","fdr","rank"
+"J10_ASTHMA_MAIN_EXMORE","Asthma (only as main-diagnosis) (more control exclusions)","X Diseases of the respiratory system (J10_)",8.9375811898492e-05,0.034192,0.00872743,4.04878,0.212417,47300,259839,FALSE,0.0135851234085708,1
