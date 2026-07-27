@@ -111,4 +111,4 @@ Code and original documentation: MIT (see LICENSE). Third-party data remain
 subject to their own terms (`data/README.md`). Please cite the manuscript and
 this repository (see CITATION.cff).
 
-Archived release: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21618247.svg)](https://doi.org/10.5281/zenodo.21618247)
+Archived release: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21618246.svg)](https://doi.org/10.5281/zenodo.21618246)
