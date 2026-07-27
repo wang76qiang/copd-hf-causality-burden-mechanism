@@ -66,7 +66,9 @@ panel_tag(axA, "A", CRIMSON, x=-0.055)
 
 # ---------- B: scenario waterfall ----------
 axB = fig.add_subplot(gs[1, 0])
-base = 10.93; smoke = -2.5; treat = -1.8
+# scenario values from gbd_intervention_scenarios.py (validated): 2050 cases averted
+# smoking cessation RR 0.40: 2.93 M; optimized pharmacotherapy RR 0.25: 1.83 M
+base = 10.93; smoke = -2.93; treat = -1.83
 labels = ["2050\nbaseline", "Smoking\ncessation", "Optimized COPD\npharmacotherapy", "Combined\npathway"]
 comb = base + smoke + treat
 starts = [0, base + smoke, base + smoke + treat, 0]
@@ -77,7 +79,7 @@ axB.bar(1, -smoke, bottom=base + smoke, color=TEAL, width=0.62, zorder=3)
 axB.bar(2, -treat, bottom=base + smoke + treat, color=TEAL, width=0.62, zorder=3, alpha=0.75)
 axB.bar(3, comb, color=GREEN, width=0.62, zorder=3)
 # black labels placed above each floating bar (scenario values verified: 10.93-2.5-1.8=6.63)
-for x, v, t in [(0, base, f"{base:.1f} M"), (1, base, "−2.5 M"),
+for x, v, t in [(0, base, f"{base:.1f} M"), (1, base, "−2.9 M"),
                 (2, base + smoke, "−1.8 M"), (3, comb, f"{comb:.1f} M")]:
     axB.text(x, v + 0.28, t, ha="center", fontsize=9.5, fontweight="bold",
              color="black")

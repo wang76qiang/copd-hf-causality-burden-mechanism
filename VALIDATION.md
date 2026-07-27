@@ -88,28 +88,36 @@ repository and regenerated `figures/Fig1-7`. `code/09_figures/audit_figures.py`
 artifact in the figure annotation (10.93 - 2.5 - 1.8 = 6.63), not a data
 error.
 
-## 2. Discrepancies (recomputed; differs from what the manuscript/figure prints)
+## 2. Discrepancies found during packaging (ALL RESOLVED 2026-07-27)
 
-### 2.1 Intervention scenarios (`code/05_gbd/gbd_intervention_scenarios.py`)
-Manuscript/ Fig. 5b: "~2.5 M (smoking cessation) and ~1.8 M (optimized COPD
-pharmacotherapy) averted cases by 2050".
+> **Resolution note (v1.0.1, 2026-07-27).** Both discrepancies below were
+> corrected in the manuscript, tables and figures: Fig. 4b now displays the
+> validated High-SDI decomposition (+44.8/+20.7/+34.5); Fig. 5b now uses the
+> validated scenario values (10.93 − 2.93 − 1.83 = 6.17 M), and the text and
+> Table 3 were updated accordingly (smoking cessation 2.9 M, optimized
+> therapy 1.8 M; PAF labels 0.45/0.74/1.48%). The corrected figures are the
+> ones shipped in this repository (`figures/Fig4_*`, `figures/Fig5_*`).
+
+### 2.1 Intervention scenarios (`code/05_gbd/gbd_intervention_scenarios.py`) — RESOLVED
+Manuscript/ Fig. 5b previously printed "~2.5 M (smoking cessation) and ~1.8 M
+(optimized COPD pharmacotherapy) averted cases by 2050".
 Recomputed under the documented convention (RR applied to the projected
 growth above the 2021 caseload; baseline 2050 = 10.93 M):
-- smoking cessation (RR 0.60): **2.93 M averted in 2050** (manuscript ~2.5 M)
+- smoking cessation (RR 0.60): **2.93 M averted in 2050** (was ~2.5 M)
 - pharmacotherapy (RR 0.75): **1.83 M averted in 2050** (matches ~1.8 M)
-The ~2.5 M printed for smoking does not match either the applied-to-growth
-convention (2.93 M) or the naive whole-caseload convention (4.37 M); it
-appears to be an earlier rounding carried into the figure. Reported here as
-an honest minor discrepancy; the ~1.8 M figure is exact.
+The ~2.5 M printed for smoking matched neither the applied-to-growth
+convention (2.93 M) nor the naive whole-caseload convention (4.37 M). The
+manuscript text, Table 3 and Fig. 5b were updated to the validated values on
+2026-07-27 (2.9 M / 1.8 M; combined 6.2 M cases in 2050).
 Output: `validation/gbd_intervention_scenarios.csv`.
 
-### 2.2 Fig. 4b high-SDI decomposition sign labelling (`code/09_figures/make_fig4.py`)
+### 2.2 Fig. 4b high-SDI decomposition sign labelling (`code/09_figures/make_fig4.py`) — RESOLVED
 `gbd_decomposition.py` computes for High SDI: growth +20.7%, ageing +44.8%,
-epidemiological +34.5%. Fig. 4b (hard-coded in `make_fig4.py`) displays
-growth = -20.8 and ageing = -44.7, i.e. the two demographic shares are
-printed with flipped signs. The epidemiological share (+34.5%, the point of
-the panel and of the manuscript sentence) is correct. Flagged for correction
-of the figure at the next revision.
+epidemiological +34.5%. Fig. 4b previously displayed growth = -20.8 and
+ageing = -44.7 (flipped signs; the three shares summed to -32% instead of
++100%). The figure script was corrected on 2026-07-27 (prevalence-based
+decomposition for all three SDI groups) and Fig. 4b was regenerated with the
+validated values.
 
 ## 3. Not verified (inputs unavailable)
 

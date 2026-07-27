@@ -59,10 +59,11 @@ panel_tag(axA, "A", CRIMSON)
 
 # ---------- B: decomposition by SDI ----------
 axB = fig.add_subplot(gs[0, 1])
-groups = ["Low SDI", "Middle SDI\n(YLDs)", "High SDI"]
-aging = [8.6, 85.58, -44.69]
-growth = [108.87, 41.88, -20.77]
-epi = [-17.47, -27.47, 34.46]
+groups = ["Low SDI", "Middle SDI", "High SDI"]
+# validated prevalence-based decomposition (gbd_decomposition.py, 2026-07-27):
+aging = [8.60, 85.94, 44.82]
+growth = [108.87, 41.84, 20.72]
+epi = [-17.47, -27.79, 34.46]
 x = np.arange(3); w = 0.26
 for k, (arr, lab, c) in enumerate([(aging, "Ageing", CRIMSON),
                                    (growth, "Population growth", AMBER),
