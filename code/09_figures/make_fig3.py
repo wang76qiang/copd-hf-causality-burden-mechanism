@@ -1,18 +1,4 @@
 # -*- coding: utf-8 -*-
-# ============================================================================
-# Module 09 - Figure 3: the 26-fold divide (geography of COPD-attributable HF)
-# Input : results/fig_country_1990_2021.csv
-# Output: figures/Fig3_26fold_divide.{png,pdf}
-# ============================================================================
-
-import os as _os
-# --- repository paths -----------------------------------------------------------
-# REPO resolves to the repository root (code/<module>/this_file.py -> ../..).
-# Override with the REPRO_ROOT environment variable if you run from elsewhere.
-REPO = _os.environ.get("REPRO_ROOT", _os.path.abspath(
-    _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..")))
-# GBD_RAW_DIR: folder with the raw IHME GBD 2021 csv downloads (see data/README.md)
-GBD_RAW_DIR = _os.environ.get("GBD_RAW_DIR", _os.path.join(REPO, "data", "raw", "gbd_2021"))
 """Figure 3 — The 26-fold divide: geography of COPD-attributable HF."""
 import sys, os
 sys.path.insert(0, os.path.dirname(__file__))
@@ -20,8 +6,8 @@ from figstyle import *
 import pandas as pd
 import numpy as np
 
-R = os.path.join(REPO, "results") + os.sep
-OUT = os.path.join(REPO, "figures")
+R = r"E:\COPD+HF\T1_TopJournal\results\\"
+OUT = r"E:\COPD+HF\T1_TopJournal\figures\final"
 
 c = pd.read_csv(R + "fig_country_1990_2021.csv")
 
@@ -70,7 +56,7 @@ for k, (_, r) in enumerate(lo.iterrows()):
                  textcoords="offset points", xytext=(10 + 6 * (k % 2), 5 + 9 * k),
                  fontsize=7, ha="left", color=TEAL, fontweight="bold")
 
-axB.set_xlabel("210 countries, ranked"); axB.set_ylabel("ASPR 2021 per 100,000")
+axB.set_xlabel("204 countries, ranked"); axB.set_ylabel("ASPR 2021 per 100,000")
 axB.set_title("The full gradient", loc="left")
 strip_spines(axB); grid(axB)
 panel_tag(axB, "B", CRIMSON, x=-0.13)
@@ -102,5 +88,5 @@ panel_tag(axC, "C", CRIMSON, x=-0.13)
 
 supertitle(fig, "Figure 3  |  The 26-fold divide: geography of COPD-attributable heart failure in 2021",
            "From Papua New Guinea (83.1/100k) to Uzbekistan (3.2/100k): national rates, trajectories since 1990, and the rate–volume duality that makes China the pivotal battleground.")
-source_note(fig, "Data: fig_country_1990_2021.csv (raw IHME GBD 2021, 210 countries, both sexes)")
+source_note(fig, "Data: fig_country_1990_2021.csv (raw IHME GBD 2021, 204 countries, both sexes)")
 save(fig, "Fig3_26fold_divide", OUT)

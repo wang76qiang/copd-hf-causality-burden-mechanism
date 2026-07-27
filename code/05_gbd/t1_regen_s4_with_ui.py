@@ -38,7 +38,10 @@ aggpat = re.compile(r" - WB|Commonwealth|World Bank|SDI|WHO|OECD|G20|BRICS|Sub-S
                     r"Asia|Europe|Oceania|Caribbean|North Africa|Australasia|Global|High-income|income|"
                     r"Region|Countries|Bank|Middle East|Health System")
 s4 = m[~m.location_name.str.contains(aggpat)].copy()
-s4 = s4[~s4.location_name.isin(['Africa', 'America'])]
+# exclude UN sub-regional aggregates that leak through the regex (2026-07-27 audit:
+# these six rows made the count 210 instead of the true 204 GBD countries)
+s4 = s4[~s4.location_name.isin(['Africa', 'America', 'Southern Africa', 'Eastern Africa',
+                                'Western Africa', 'Central Africa', 'Northern Africa', 'North America'])]
 s4 = s4.sort_values('ASPR_2021', ascending=False).reset_index(drop=True)
 s4['rank'] = s4.index + 1
 s4 = s4[['location_name', 'ASPR_2021', 'ASPR_lower', 'ASPR_upper', 'cases_2021', 'cases_lower', 'cases_upper', 'rank']]

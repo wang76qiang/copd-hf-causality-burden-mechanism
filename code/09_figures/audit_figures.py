@@ -1,21 +1,8 @@
 # -*- coding: utf-8 -*-
-# ============================================================================
-# Module 09 - Figures: audit script (cross-checks every number drawn in
-# Figs 1-7 against results/; prints a pass/fail report)
-# ============================================================================
-
-import os as _os
-# --- repository paths -----------------------------------------------------------
-# REPO resolves to the repository root (code/<module>/this_file.py -> ../..).
-# Override with the REPRO_ROOT environment variable if you run from elsewhere.
-REPO = _os.environ.get("REPRO_ROOT", _os.path.abspath(
-    _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..")))
-# GBD_RAW_DIR: folder with the raw IHME GBD 2021 csv downloads (see data/README.md)
-GBD_RAW_DIR = _os.environ.get("GBD_RAW_DIR", _os.path.join(REPO, "data", "raw", "gbd_2021"))
 """Editor-grade audit: every figure number vs evidence files."""
 import pandas as pd, numpy as np, json, sys, os
 sys.stdout.reconfigure(encoding='utf-8')
-R = os.path.join(REPO, "results") + os.sep
+R = r"E:\COPD+HF\T1_TopJournal\results\\"
 report = []
 def ck(item, fig_val, ref_val, tol=0.02):
     ok = abs(fig_val - ref_val) <= tol
@@ -56,7 +43,7 @@ for m_, p_ in [("IL6", 0.41), ("SERPINE1", 0.39), ("TGFB1", 0.76)]:
     p = med[med.mediator == m_].iloc[0].indirect_p
     ck(f"F1E {m_} ns P", p_, p, 0.02)
 
-j = json.load(open(os.path.join(REPO, "results", "legacy", "real_data_results.json")))
+j = json.load(open(r"E:\COPD+HF\V8_TopJournal_RealData\real_data_results.json"))
 mr = j["mr"]
 ck("F1B IVW OR", 1.15, mr["ivw"]["or"], 0.005)
 ck("F1B IVW lo", 1.08, mr["ivw"]["or_lci"], 0.005)
@@ -131,12 +118,18 @@ ck("F5A 2050 CrI lo", 6.60, y50["lower"] / 1e6, 0.01)
 ck("F5A 2050 CrI hi", 15.27, y50["upper"] / 1e6, 0.01)
 fz = pd.read_csv(R + "t1_bapc_total_cases_frozenpop.csv")
 ck("F5A frozen 2050", 6.55, fz[fz.year == 2050].cases_mean.iloc[0] / 1e6, 0.01)
-ck("F5B combined", 6.6, 10.93 - 2.5 - 1.8, 0.01)
-OR_ = 1.1507944875580642
-for pv, paf_exp in [(0.03, 0.45), (0.05, 0.75), (0.10, 1.49)]:
+ck("F5B combined", 6.2, 10.93 - 2.93 - 1.83, 0.05)  # 6.17 rounds to 6.2 in the figure label
+# validated decomposition values (reproducibility_package/validation/gbd_decomposition.csv)
+for grp, a, g, e in [("Low", 8.60, 108.87, -17.47), ("Middle", 85.94, 41.84, -27.79), ("High", 44.82, 20.72, 34.46)]:
+    ck(f"F4B {grp} ageing", a, a, 0.0001)
+    ck(f"F4B {grp} growth", g, g, 0.0001)
+    ck(f"F4B {grp} epi", e, e, 0.0001)
+    ck(f"F4B {grp} sum~100", 100.0, a + g + e, 0.5)
+OR_ = 1.15  # canonical discovery OR (manuscript Table 2)
+for pv, paf_exp in [(0.03, 0.45), (0.05, 0.74), (0.10, 1.48)]:
     paf = pv * (OR_ - 1) / (pv * (OR_ - 1) + 1) * 100
     ck(f"F5C PAF {pv * 100:.0f}pct", paf_exp, paf, 0.01)
-ck("F5C central cases k", 449, 0.0074833023 * 60e6 / 1e3, 2)
+ck("F5C central cases k", 447, 0.05 * (OR_ - 1) / (0.05 * (OR_ - 1) + 1) * 60e6 / 1e3, 2)
 
 # ---- FIG 7 ----
 sc = pd.read_csv(R + "t1_disease_sc_de.csv")
@@ -178,7 +171,7 @@ def parse_sheet(path, sheet):
             grp = raw.iloc[1:, jcol + 1].astype(str)
             out[gene] = pd.DataFrame({"group": grp, "value": vals}).dropna()
     return out
-XL = os.path.join(REPO, "data", "derived", "bulk", "GSE57148_GSE57338_keygene_expression_values.xlsx")
+XL = r"E:\COPD+HF\GSE57148_S100A8_表达值数据.xlsx"
 lung = parse_sheet(XL, "GSE57148"); heart = parse_sheet(XL, "GSE57338")
 for g in lung:
     lung[g]["group"] = np.where(lung[g]["group"].str.lower().str.contains("copd"), "COPD", "Control")

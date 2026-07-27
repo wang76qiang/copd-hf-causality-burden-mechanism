@@ -34,14 +34,17 @@ REGIONS = ["Andean Latin America", "Australasia", "Caribbean", "Central Asia", "
            "Southern Latin America", "Southern Sub-Saharan Africa", "Tropical Latin America",
            "Western Europe", "Western Sub-Saharan Africa"]
 # Aggregate (non-country) location filter, identical to t1_regen_s4_with_ui.py;
-# yields exactly the 210 country-level locations used in the manuscript.
+# yields exactly the 204 GBD country-level locations used in the manuscript
+# (2026-07-27 audit: six UN sub-regional aggregates are excluded explicitly below).
 import re as _re
 AGG_PAT = _re.compile(r" - WB|Commonwealth|World Bank|SDI|WHO|OECD|G20|BRICS|Sub-Saharan|Latin America|"
                       r"Asia|Europe|Oceania|Caribbean|North Africa|Australasia|Global|High-income|income|"
                       r"Region|Countries|Bank|Middle East|Health System")
+SUBREGION_AGG = ("Africa", "America", "Southern Africa", "Eastern Africa", "Western Africa",
+                 "Central Africa", "Northern Africa", "North America")
 
 def is_country(name):
-    return (not AGG_PAT.search(name)) and name not in ("Africa", "America")
+    return (not AGG_PAT.search(name)) and name not in SUBREGION_AGG
 
 USE = ["measure_name", "location_name", "sex_name", "age_name", "metric_name", "year", "val"]
 

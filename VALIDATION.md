@@ -97,6 +97,17 @@ error.
 > Table 3 were updated accordingly (smoking cessation 2.9 M, optimized
 > therapy 1.8 M; PAF labels 0.45/0.74/1.48%). The corrected figures are the
 > ones shipped in this repository (`figures/Fig4_*`, `figures/Fig5_*`).
+>
+> **Resolution note (v1.0.2, 2026-07-27).** A third data issue was found and
+> fixed: the strict country table (`results/t1_country_aspr_2021_strict.csv`)
+> contained six UN sub-regional aggregate rows (Southern/Eastern/Western/
+> Central/Northern Africa, North America) that had leaked through the
+> aggregate filter, inflating the country count to 210. The filter in
+> `code/05_gbd/t1_regen_s4_with_ui.py` and `gbd_fig_data.py` now excludes
+> them explicitly; the corrected files contain exactly the **204** GBD 2021
+> countries and territories (top: Papua New Guinea 83.09; bottom: Uzbekistan
+> 3.20; 26-fold gradient and all rankings unchanged). The manuscript, Table 1,
+> Table S4 and Fig. 3 were updated to the 204-country framing.
 
 ### 2.1 Intervention scenarios (`code/05_gbd/gbd_intervention_scenarios.py`) — RESOLVED
 Manuscript/ Fig. 5b previously printed "~2.5 M (smoking cessation) and ~1.8 M
