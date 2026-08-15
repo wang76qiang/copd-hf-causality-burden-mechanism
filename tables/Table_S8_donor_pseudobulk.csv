@@ -1,4 +1,4 @@
-cell_type,gene,n_case_donors,n_ctrl_donors,case_mean,ctrl_mean,logFC_donor,welch_p,dataset,bonf_p
+﻿cell_type,gene,n_case_donors,n_ctrl_donors,case_mean,ctrl_mean,logFC_donor,welch_p,dataset,bonf_p
 macrophage,THBS1,9,7,0.83,0.832,-0.003,0.9931596191139891,COPD lung,1.0
 macrophage,CD163,9,7,1.455,1.443,0.012,0.9392653317733459,COPD lung,1.0
 macrophage,SERPINE1,9,7,0.112,0.153,-0.041,0.49257458229577633,COPD lung,1.0

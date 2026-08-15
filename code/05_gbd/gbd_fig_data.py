@@ -4,7 +4,7 @@
 # make_fig2.py / make_fig3.py, directly from the raw IHME GBD 2021 files:
 #   results/fig_sdi_series_prev.csv    (year x SDI-quintile ASPR, 1990-2021)
 #   results/fig_sdi_series_yld.csv     (year x SDI-quintile ASYR, 1990-2021)
-#   results/fig_country_1990_2021.csv  (210 countries: ASPR + cases 1990/2021)
+#   results/fig_country_1990_2021.csv  (204 countries and territories: ASPR + cases 1990/2021)
 #   results/fig_eapc_prev_regions.csv  (EAPC of ASPR: Global/sexes/SDI/regions)
 #
 # Input : GBD_RAW_DIR/IHME-GBD_2021_DATA-*.csv   (streamed, see data/README.md)

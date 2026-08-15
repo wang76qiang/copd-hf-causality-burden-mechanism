@@ -4,7 +4,7 @@
 #
 # Slope index of inequality (SII) and concentration index (CI) of the
 # age-standardized prevalence (ASPR) and YLD (ASYR) rates of COPD-attributable
-# HF across 210 countries in 1990 and 2021, following WHO/GBD conventions:
+# HF across 204 countries and territories in 1990 and 2021, following WHO/GBD conventions:
 #   * countries are ranked by SDI; each country's relative rank (ridit score)
 #     is the midpoint of its cumulative population share;
 #   * SII = slope of the population-weighted linear regression of the rate on

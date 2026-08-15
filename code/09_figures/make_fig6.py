@@ -24,7 +24,8 @@ from matplotlib.patches import Circle
 from scipy import stats as sst
 
 R = os.path.join(REPO, "results") + os.sep
-OUT = os.path.join(REPO, "figures")
+# MedComm revision: write into the working-copy folder, not the source repo
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
 
 cc = pd.read_csv(R + "t1_crosscohort_validation.csv")
 
@@ -181,7 +182,11 @@ axE.set_title("Heart validation: fibrotic matrix\nremodelling in failing LV", lo
 strip_spines(axE); grid(axE)
 panel_tag(axE, "E", CRIMSON, x=-0.22)
 
-# ---------- F: cross-cohort heatmap ----------
+# ---------- F: cross-cohort heatmap (MedComm revision) ----------
+# Show the 15 key / manuscript-named genes of the 41-gene intersection so the
+# panel stays readable at 180 mm width; the full 41-gene matrix is unchanged
+# in t1_crosscohort_validation.csv for the supplement. (LUM/ASPN/ACE are not
+# part of the 41-gene intersection and remain shown in panel E.)
 axF = fig.add_subplot(gs[2, :])
 piv = cc.pivot_table(index="gene", columns="cohort", values="effect_log2fc")
 pivp = cc.pivot_table(index="gene", columns="cohort", values="fdr_within_cohort")
@@ -189,6 +194,11 @@ order_c = ["GSE57148_COPD_lung", "CXG_COPD_lung", "GSE57338_HF_heart", "CXG_DCM_
 piv = piv.reindex(columns=order_c); pivp = pivp.reindex(columns=order_c)
 keep_g = piv.notna().sum(axis=1) >= 2
 piv = piv[keep_g]; pivp = pivp[keep_g]
+KEY_GENES = ["F13A1", "S100A8", "S100A12", "CD163", "SMOC2", "SFRP4",
+             "SERPINE1", "THBS1", "SPP1", "IL1R2", "EGR1", "CDKN1A",
+             "AREG", "SOCS3", "IL1RL1"]
+KEY_GENES = [g for g in KEY_GENES if g in piv.index]
+piv = piv.loc[KEY_GENES]; pivp = pivp.loc[KEY_GENES]
 rowmean = piv.mean(axis=1, skipna=True)
 piv = piv.loc[rowmean.sort_values().index]; pivp = pivp.loc[piv.index]
 M = piv.to_numpy(dtype=float)
@@ -196,16 +206,29 @@ vmax = np.nanmax(np.abs(M))
 im = axF.imshow(M, aspect="auto", cmap="RdBu_r", vmin=-vmax, vmax=vmax)
 axF.set_xticks(range(len(order_c)))
 axF.set_xticklabels(["Bulk COPD lung\nGSE57148", "sc COPD lung\n(CELLxGENE)",
-                     "Bulk failing heart\nGSE57338", "sn failing heart\n(Reichart)"], fontsize=8.5)
-axF.set_yticks(range(len(piv))); axF.set_yticklabels(piv.index, fontsize=7)
+                     "Bulk failing heart\nGSE57338", "sn failing heart\n(Reichart)"],
+                    fontsize=10.5)
+axF.set_yticks(range(len(piv)))
+axF.set_yticklabels(piv.index, fontsize=11)
+for tick, g in zip(axF.get_yticklabels(), piv.index):
+    if g in hub:
+        tick.set_fontweight("bold")
+axF.tick_params(axis="both", length=0)
 for i in range(M.shape[0]):
     for j in range(M.shape[1]):
         if not np.isnan(M[i, j]) and pivp.to_numpy(dtype=float)[i, j] < 0.05:
-            axF.text(j, i, "•", ha="center", va="center", color="white", fontsize=8,
-                     fontweight="bold")
-cb = fig.colorbar(im, ax=axF, fraction=0.02, pad=0.015)
-cb.set_label("log₂FC (dot: FDR < 0.05)", fontsize=8)
-axF.set_title("Cross-cohort direction consistency of the 41-gene program (white = not measured) — F13A1 up in 4/4; S100A8/A12, CD163, SMOC2, SFRP4 replicate",
+            axF.text(j, i, "\u25CF", ha="center", va="center", color="white",
+                     fontsize=12, fontweight="bold")
+# thin separators make the enlarged cells easier to scan
+for yy in np.arange(0.5, M.shape[0], 1):
+    axF.axhline(yy, color="white", lw=1.2)
+for xx in np.arange(0.5, M.shape[1], 1):
+    axF.axvline(xx, color="white", lw=1.2)
+cb = fig.colorbar(im, ax=axF, fraction=0.025, pad=0.015)
+cb.set_label("log₂FC (dot: FDR < 0.05)", fontsize=10)
+cb.ax.tick_params(labelsize=9.5)
+axF.set_title("Cross-cohort direction consistency — 15 representative genes of the "
+              "41-gene intersection (white = not measured; full matrix in supplement)",
               loc="left", fontsize=9.5)
 panel_tag(axF, "F", INK, x=-0.035)
 

@@ -5,9 +5,6 @@ authors:
   - family-names: Fang
     given-names: Hongjuan
     affiliation: "Department of Endocrinology, Aviation General Hospital, Beijing, China"
-  - family-names: Li
-    given-names: Letong
-    affiliation: "Chinese PLA Center for Disease Control and Prevention, Beijing, China"
   - family-names: Bu
     given-names: Lijuan
     affiliation: "Chinese PLA Center for Disease Control and Prevention, Beijing, China"
@@ -16,7 +13,7 @@ authors:
     affiliation: "Chinese PLA Center for Disease Control and Prevention, Beijing, China"
     orcid: "https://orcid.org/0000-0003-4392-0889"
 year: 2026
-version: v1.0.0
+version: v1.1.0-medcomm
 doi: 10.5281/zenodo.21618246
 license: MIT
 repository-code: "https://github.com/wang76qiang/copd-hf-causality-burden-mechanism"

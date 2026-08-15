@@ -4,8 +4,8 @@ Code, derived data, results, tables and figures for the manuscript:
 
 > **Chronic obstructive pulmonary disease and heart failure: genetic evidence
 > of causality, global burden, and a tissue-confined inflammo-fibrotic
-> mechanism** — Hongjuan Fang, Letong Li, Lijuan Bu, Qiang Wang.
-> Submitted to *EClinicalMedicine* (2026).
+> mechanism** — Hongjuan Fang, Lijuan Bu, Qiang Wang.
+> Prepared for submission to *MedComm* (2026).
 
 The paper combines three evidence layers:
 
@@ -13,7 +13,7 @@ The paper combines three evidence layers:
    heart failure in a European discovery cohort (IVW OR 1.15, 95% CI
    1.08–1.22), replication in FinnGen R12 and BioBank Japan, three-cohort
    meta-analysis, multivariable MR (MVMR) and two-step mediation MR.
-2. **Global burden** — GBD 2021 COPD-attributable HF in 210 countries,
+2. **Global burden** — GBD 2021 COPD-attributable HF in 204 countries and territories,
    1990–2021: EAPC trends, Das Gupta decomposition, SII/CI inequality,
    frontier analysis, BAPC projection to 2050, Levin PAF, GBD–MR bridge and
    intervention scenarios.
@@ -112,3 +112,8 @@ subject to their own terms (`data/README.md`). Please cite the manuscript and
 this repository (see CITATION.cff).
 
 Archived release: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21618246.svg)](https://doi.org/10.5281/zenodo.21618246)
+
+
+## MedComm submission update
+
+The earlier EClinicalMedicine submission has formally ended. This update removes the previously listed fourth author from the author list, uses the corrected 204-country GBD framing, and includes the revised Tables S1-S10 and Figures 5-7 prepared for MedComm.

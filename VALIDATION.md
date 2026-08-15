@@ -155,3 +155,8 @@ NOT VERIFIED.
   shipped and cross-checked by module 06/09.
 - OpenGWAS-API-dependent fetch steps: require a personal JWT and are cached
   in `data/derived/`; the analysis steps reading those caches are runnable.
+
+
+## MedComm v1.1.0 update (2026-08-15)
+
+See `VALIDATION_ADDENDUM_MedComm.md`. The MedComm update removes the previously listed fourth author from the author list, updates the target journal after the earlier EClinicalMedicine submission formally ended, uses the corrected 204-country framing throughout, rebuilds Tables S1-S10 in English, and replaces Figures 5-7 with the corrected versions.

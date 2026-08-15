@@ -24,7 +24,8 @@ import pandas as pd
 import numpy as np
 
 R = os.path.join(REPO, "results") + os.sep
-OUT = os.path.join(REPO, "figures")
+# MedComm revision: write into the working-copy folder, not the source repo
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
 
 bapc = pd.read_csv(R + "t1_bapc_total_cases.csv")
 frozen = pd.read_csv(R + "t1_bapc_total_cases_frozenpop.csv")
@@ -78,7 +79,7 @@ axB.bar(0, base, color=INK, width=0.62, zorder=3)
 axB.bar(1, -smoke, bottom=base + smoke, color=TEAL, width=0.62, zorder=3)
 axB.bar(2, -treat, bottom=base + smoke + treat, color=TEAL, width=0.62, zorder=3, alpha=0.75)
 axB.bar(3, comb, color=GREEN, width=0.62, zorder=3)
-# black labels placed above each floating bar (scenario values verified: 10.93-2.5-1.8=6.63)
+# value labels above each floating bar (verified: 10.93 - 2.93 - 1.83 = 6.17 M combined)
 for x, v, t in [(0, base, f"{base:.1f} M"), (1, base, "−2.9 M"),
                 (2, base + smoke, "−1.8 M"), (3, comb, f"{comb:.1f} M")]:
     axB.text(x, v + 0.28, t, ha="center", fontsize=9.5, fontweight="bold",
@@ -98,15 +99,18 @@ paf = p * (OR - 1) / (p * (OR - 1) + 1)
 cases = paf * HF_POOL / 1e3
 axC.plot(p * 100, cases, color=CRIMSON, lw=2.6, zorder=3)
 axC.fill_between(p * 100, 0, cases, color=CRIMSON, alpha=0.10, zorder=1)
-offsets = {3: (0.6, 640), 5: (5.6, 700), 10: (10.9, 1010)}
+# MedComm revision: labels moved into the empty band between the PAF curve and
+# the GBD attribution line, with leader lines, so no text touches curve/points.
+offsets = {3: (0.9, 1250), 5: (2.6, 2100), 10: (6.0, 2950)}
 for pv, lab in [(3, "3%"), (5, "5% central"), (10, "10%")]:
     pf = pv / 100 * (OR - 1) / (pv / 100 * (OR - 1) + 1)
     cs = pf * HF_POOL / 1e3
     axC.scatter([pv], [cs], s=70, color=INK, zorder=4, edgecolor="white")
     tx, ty = offsets[pv]
     axC.annotate(f"{lab}: PAF {pf*100:.2f}% ≈ {cs/1e3:.2f} M", (pv, cs),
-                 xytext=(tx, ty), fontsize=8, color=INK,
-                 arrowprops=dict(arrowstyle="-", color=SLATE, lw=0.6))
+                 xytext=(tx, ty), fontsize=8.5, color=INK, fontweight="bold",
+                 arrowprops=dict(arrowstyle="-", color=SLATE, lw=0.8,
+                                 shrinkA=2, shrinkB=3))
 axC.axhline(3613, color=TEAL, ls="--", lw=1.4)
 axC.text(1.2, 3850, "GBD attribution: 3.61 M",
          fontsize=8, color=TEAL, fontweight="bold")

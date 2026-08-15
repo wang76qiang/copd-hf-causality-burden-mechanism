@@ -1,12 +1,14 @@
-method,beta,se,pval,OR,OR_95CI_low,OR_95CI_high,note
-IVW (fixed effects),0.14045256258825345,0.031071932509529932,6.176984296279997e-06,1.1507944875580642,1.082801403430513,1.2230571076083894,
-"IVW (random effects, DL)",0.1455538904415395,0.05082328728672933,0.004184320775457273,1.156680066902141,1.0470118473653234,1.2778353755360312,tau2=0.0118
-Weighted median,0.19767441860465115,0.038933131434441,3.8287596537678326e-07,1.2185655869445582,1.129037478709192,1.3151929122700134,
-Simple mode,0.19590062002930989,0.050237744137535,9.640313271952472e-05,1.2164060129333616,1.102339391981437,1.3422758898607463,
-MR-Egger (slope),0.13985180867202368,0.04814177352358596,0.0036725415834406583,1.1501033508852059,1.04654465475385,1.2639094870046326,intercept=0.00052 (p=0.925)
-Radial MR (modified second-order weights),,,,,,,未在 real_data_results.json 中存档，待补算
-"CAUSE (causal model gamma, sensitivity)",0.1379,,,1.1479,1.0316,1.2652,"Full CAUSE model comparison requires genome-wide summary statistics (>100k variants). With only 10 instruments, we fitted the causal model separately and report the gamma posterior as a sensitivity estimate."
-"MR-Clust cluster 1 (Causal, n=6 SNPs)",0.263,,,1.3008267189517242,,,"SNPs: rs114904431, rs1246642, rs2273500, rs2395191, rs4488938, rs9788721"
-"MR-Clust cluster 2 (Null, n=4 SNPs)",-0.0302,,,0.9702514638494153,,,"SNPs: rs11525583, rs1512281, rs34944514, rs3822479"
-Cochran's Q (heterogeneity),,,0.02617394414727936,,,,"Q=18.89, df=9, I2=52.3%"
-Instrument strength (F),,,,,,,"median F=36.9, range 31.5-166.4"
+﻿method,beta,se,pval,OR,OR_95CI_low,OR_95CI_high,note
+IVW (fixed effects),0.1405,0.0311,6.18e-06,1.151,1.083,1.223,
+"IVW (random effects, DL)",0.1456,0.0508,0.00418,1.157,1.047,1.278,tau2 = 0.0118
+Weighted median,0.1977,0.0389,3.83e-07,1.219,1.129,1.315,
+Simple mode,0.1959,0.0502,9.64e-05,1.216,1.102,1.342,
+MR-Egger (slope),0.1399,0.0481,0.00367,1.150,1.047,1.264,intercept = 0.00052 (P = 0.925)
+Radial IVW (modified second-order weights),0.211,,8.6e-06,,,,no outlier variants identified; radial Q P = 0.22
+CAUSE (causal model gamma; sensitivity),0.1379,,,1.148,1.032,1.265,causal-model gamma posterior only; full CAUSE model comparison requires genome-wide summary statistics
+MR-Clust cluster 1 (Causal; n = 6 SNPs),0.2630,,,1.301,,,"rs114904431, rs1246642, rs2273500, rs2395191, rs4488938, rs9788721"
+MR-Clust cluster 2 (Null; n = 4 SNPs),-0.0302,,,0.970,,,"rs11525583, rs1512281, rs34944514, rs3822479"
+Cochran's Q (heterogeneity),,,0.0262,,,,"Q = 18.89, df = 9, I2 = 52.3%"
+MR-PRESSO,,,,,,,no significant outliers detected (executed; archived logs)
+Steiger directionality,,,,,,,10/10 instruments orientated COPD -> HF (correct direction)
+Instrument strength (F),,,,,,,"median F = 36.9, range 31.5-166.4"

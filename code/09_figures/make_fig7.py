@@ -28,7 +28,8 @@ from matplotlib.path import Path
 import matplotlib.patheffects as pe
 
 R = os.path.join(REPO, "results") + os.sep
-OUT = os.path.join(REPO, "figures")
+# MedComm revision: write into the working-copy folder, not the source repo
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
 
 sc = pd.read_csv(R + "t1_disease_sc_de.csv")
 hs = pd.read_csv(R + "t1_heart_sc_de.csv")
@@ -66,10 +67,10 @@ for i, g in enumerate(genes):
                     lw=1.0, zorder=3)
 axA.set_xticks(range(len(cts)))
 axA.set_xticklabels([c.replace(" cell", "").replace("capillary endothelial", "capillary EC")
-                     for c in cts], rotation=38, ha="right", fontsize=8)
-axA.set_yticks(range(len(genes))); axA.set_yticklabels(genes, fontsize=8.5)
+                     for c in cts], rotation=38, ha="right", fontsize=9)
+axA.set_yticks(range(len(genes))); axA.set_yticklabels(genes, fontsize=9.5)
 axA.text(0.01, 1.03, "color: log₂FC · size: % expressing · ring: FDR < 0.05",
-         transform=axA.transAxes, fontsize=7.2, color=SLATE)
+         transform=axA.transAxes, fontsize=8, color=SLATE)
 panel_tag(axA, "A", INK, x=-0.075)
 
 # ================= B: heart dotplot =================
@@ -89,8 +90,8 @@ for i, g in enumerate(genes_h):
                     alpha=min(1, abs(fc) / 0.5 + 0.2),
                     edgecolor=INK if row.fdr_CM < 0.05 else "none", lw=1.0, zorder=3)
 axB.set_xticks(range(len(cts_h)))
-axB.set_xticklabels(["  endothelial", "fibroblast", "macrophage"], fontsize=8.5)  # 2-char right shift
-axB.set_yticks(range(len(genes_h))); axB.set_yticklabels(genes_h, fontsize=8.5)
+axB.set_xticklabels(["  endothelial", "fibroblast", "macrophage"], fontsize=9)  # 2-char right shift
+axB.set_yticks(range(len(genes_h))); axB.set_yticklabels(genes_h, fontsize=9.5)
 panel_tag(axB, "B", INK, x=-0.22)
 
 # ================= C: SERPINE1 LR edges =================
@@ -113,11 +114,11 @@ for lab, dis, sc_ in rows:
     yv = lab2idx[lab] + (0.14 if dis == "COPD" else -0.14)
     axC.scatter(sc_, yv, s=90, color=CRIMSON if dis == "COPD" else SLATE, zorder=3,
                 edgecolor="white")
-axC.set_yticks(range(len(lab2idx))); axC.set_yticklabels(lab2idx.keys(), fontsize=7.2)
+axC.set_yticks(range(len(lab2idx))); axC.set_yticklabels(lab2idx.keys(), fontsize=8.2)
 axC.set_xlabel("SERPINE1 ligand–receptor score")
 axC.legend(handles=[plt.Line2D([], [], marker="o", ls="", color=CRIMSON, label="COPD"),
                     plt.Line2D([], [], marker="o", ls="", color=SLATE, label="Normal")],
-           fontsize=7.5, loc="lower right")
+           fontsize=8.2, loc="lower right")
 strip_spines(axC); grid(axC, "x")
 panel_tag(axC, "C", INK, x=-0.30)
 
@@ -132,32 +133,39 @@ for yi, v in zip(y, pa.spearman_rho):
     axD.text(v + (0.008 if v > 0 else -0.008), yi, f"{v:+.2f}",
              va="center", ha="left" if v > 0 else "right", fontsize=8, fontweight="bold",
              color=CRIMSON if v > 0 else SKY)
-axD.set_xlim(-0.24, 0.335)   # headroom keeps +value labels inside the axes
-axD.set_yticks(y); axD.set_yticklabels(pa.gene, fontsize=8.5)
+axD.set_xlim(-0.24, 0.42)   # headroom keeps +value labels clear of panel E's wider y-labels
+axD.set_yticks(y); axD.set_yticklabels(pa.gene, fontsize=9.2)
 axD.set_xlabel("Spearman ρ with myeloid pseudotime")
 strip_spines(axD); grid(axD, "x")
 panel_tag(axD, "D", INK, x=-0.30)
 
 # ================= E: PheWAS safety =================
 axE = fig.add_subplot(gs[1, 2])
-top10 = phe.nsmallest(10, "pval").iloc[::-1]
+# MedComm revision: show the 8 smallest-P endpoints with FULL names (manual
+# two-line breaks, no ellipsis truncation); "none significant" is unchanged.
+_LABEL_BREAKS = {
+    "Asthma (only as main-diagnosis) (more control exclusions)":
+        "Asthma (only as main-diagnosis)\n(more control exclusions)",
+    "Chronic rhinitis, nasopharyngitis and pharyngitis":
+        "Chronic rhinitis, nasopharyngitis\nand pharyngitis",
+}
+top10 = phe.nsmallest(8, "pval").iloc[::-1]
 y = np.arange(len(top10))
 cols = [TEAL if b < 0 else CRIMSON for b in top10.beta_altC]
-axE.scatter(top10.mlogp, y, s=55, color=cols, zorder=3, edgecolor="white")
+axE.scatter(top10.mlogp, y, s=65, color=cols, zorder=3, edgecolor="white")
 for yi, (_, r) in zip(y, top10.iterrows()):
-    axE.scatter([r.mlogp], [yi], s=55, color=TEAL if r.beta_altC < 0 else CRIMSON, zorder=3)
+    axE.scatter([r.mlogp], [yi], s=65, color=TEAL if r.beta_altC < 0 else CRIMSON, zorder=3)
 bonf = -np.log10(2.02e-5)
 axE.axvline(bonf, color=CRIMSON, ls="--", lw=1.1)
-axE.text(bonf - 0.06, len(top10) - 0.4, "Bonferroni\n2.0×10⁻⁵", fontsize=7,
+axE.text(bonf - 0.06, len(top10) - 0.4, "Bonferroni\n2.0×10⁻⁵", fontsize=8,
          color=CRIMSON, va="top", ha="right")
 axE.set_yticks(y)
-axE.set_yticklabels([t[:20] + "…" if len(t) > 20 else t for t in top10.phenotype],
-                    fontsize=6.8)
+axE.set_yticklabels([_LABEL_BREAKS.get(t, t) for t in top10.phenotype], fontsize=8)
 axE.set_xlabel("−log₁₀ P  (rs7860931, SERPINE1 cis)")
 axE.set_ylim(-0.7, len(top10) + 0.6)
 strip_spines(axE); grid(axE, "x")
-axE.text(0.02, 1.03, "2,470 endpoints · none significant — clean safety window",
-         transform=axE.transAxes, fontsize=7.2, color=SLATE)
+axE.text(0.02, 1.04, "2,470 endpoints · none significant — clean safety window\n(8 smallest-P endpoints shown)",
+         transform=axE.transAxes, fontsize=8, color=SLATE, va="bottom")
 panel_tag(axE, "E", INK, x=-0.32)
 
 # ================= F: professional illustration (user-provided Fig7F.jpg) =================

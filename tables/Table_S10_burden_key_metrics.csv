@@ -1,0 +1,14 @@
+﻿Metric,Value
+Global cases 1990 -> 2021 (95% UI),1.50 M (1.10-2.00) -> 3.61 M (2.67-4.82)
+"ASPR 1990 -> 2021 per 100,000",41.93 -> 43.24 (32.08-57.68); EAPC -0.133 (-0.215 to -0.050)
+EAPC excluding 2020-2021,-0.145 (-0.236 to -0.054)
+Global YLDs 2021 / ASYR,"321,753 / 3.85 per 100,000; EAPC -0.121"
+High-SDI EAPC (ASPR),+1.327 (1.214 to 1.440)
+Highest / lowest national ASPR 2021,Papua New Guinea 83.09; China 76.89 / Uzbekistan 3.20 (26-fold)
+Decomposition (global cases),ageing +53.3%; population +44.7%; epidemiology +1.9%
+Inequality (ASPR),SII -40.05 -> -23.10; CI -0.25 -> -0.15
+BAPC projection 2035,6.13 M (+69.7%; 95% CrI 5.31-6.96 M)
+BAPC projection 2050,10.93 M (+202.6%; 95% CrI 6.60-15.27 M)
+Frozen-population sensitivity 2050,6.55 M (+81.3%); frequentist APC +73%
+"PAF (MR-implied, sensitivity; COPD prevalence 3/5/10%)",0.45% / 0.74% / 1.48% (~270k / ~450k / ~890k cases)
+Intervention scenarios (2050 cases averted),smoking cessation -2.9 M; optimized COPD therapy -1.8 M (combined 6.2 M cases in 2050)

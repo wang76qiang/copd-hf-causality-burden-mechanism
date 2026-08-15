@@ -1,0 +1,11 @@
+﻿Layer,Resource,Trait / tissue,Ancestry,Sample size,Cases/controls (or cells)
+Exposure GWAS,IEU ebi-a-GCST90018807,COPD,European,"468,475","13,530 / 454,945"
+Discovery outcome,IEU ebi-a-GCST009541,Heart failure,European,"<= 977,323","47,309 / 930,014"
+Replication 1,FinnGen R12 I9_HEARTFAIL,"Heart failure, strict",Finnish,"500,348","37,653 / 462,695"
+Replication 2,BioBank Japan bbj-a-103/-109,COPD / congestive HF,East Asian,"204,907 / 212,453","3,315 / 201,592; 9,413 / 203,040"
+pQTL,deCODE prot-c-2925_9_1,Circulating PAI-1,Icelandic,"~35,000",NA
+Bulk transcriptome,GEO GSE57148,COPD lung,NA,184,95 / 89
+Bulk transcriptome,GEO GSE57338,Failing vs non-failing LV,NA,313,177 / 136
+"Single cell, lung",CELLxGENE,COPD lung,NA,"57,918 cells","22,119 / 35,799"
+"Single cell, heart",Reichart et al.,DCM/ACM myocardium,NA,"317,581 nuclei (3 compartments)","253,346 / 64,235"
+Burden,GBD 2021 (raw IHME),COPD-attributable HF,Global,204 locations,1990-2021
