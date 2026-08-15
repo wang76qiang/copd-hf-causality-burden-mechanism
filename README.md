@@ -48,7 +48,7 @@ The paper combines three evidence layers:
 │   ├── derived/       # small shipped intermediates (see PIPELINE.md)
 │   └── raw/           # (empty) place IHME GBD csv here or set GBD_RAW_DIR
 ├── results/           # all analysis outputs (csv/json/md), incl. legacy/
-├── tables/            # Table_S1–S8 (curated; tables/rebuilt/ = regenerated)
+├── tables/            # Table_S1–S10 (curated; tables/rebuilt/ = regenerated)
 ├── figures/           # Fig1–7 (png + pdf) plus analysis-level figures
 └── validation/        # outputs of the latest validation re-run
 ```
