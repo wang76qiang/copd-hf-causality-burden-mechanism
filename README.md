@@ -2,10 +2,11 @@
 
 Code, derived data, results, tables and figures for the manuscript:
 
-> **Chronic obstructive pulmonary disease and heart failure: genetic evidence
-> of causality, global burden, and a tissue-confined inflammo-fibrotic
-> mechanism** — Hongjuan Fang, Lijuan Bu, Qiang Wang.
-> Prepared for submission to *MedComm* (2026).
+> **Chronic obstructive pulmonary disease and heart failure: a vertically
+> integrated audit of genetic causality, global burden, and a tissue-confined
+> inflammo-fibrotic mechanism in a cross-organ comorbidity syndrome** —
+> Hongjuan Fang, Lijuan Bu, Qiang Wang.
+> Prepared for submission to *Journal of Translational Medicine* (2026).
 
 The paper combines three evidence layers:
 
@@ -29,6 +30,9 @@ The paper combines three evidence layers:
 ├── README.md  LICENSE  CITATION.cff  requirements.txt  r_packages.txt
 ├── PIPELINE.md        # module map: script -> inputs -> outputs -> manuscript
 ├── VALIDATION.md      # executed numerical verifications vs the manuscript
+├── VALIDATION_ADDENDUM_MedComm.md        # MedComm v1.1.0 archive addendum
+├── VALIDATION_ADDENDUM_elevation_round.md # JTM elevation-round addendum (2026-09-04)
+├── SAP_preregistered_analyses.md          # pre-registered next analyses (v1.0)
 ├── code/
 │   ├── 00_prepare_data_downloads.sh   # stage shipped intermediates -> data_downloads/
 │   ├── 01_mr_discovery/      # discovery MR export + legacy discovery scripts
@@ -41,15 +45,19 @@ The paper combines three evidence layers:
 │   │                           #   41-gene cross-cohort validation
 │   ├── 07_singlecell/        # COPD lung + heart sc analyses, donor pseudobulk
 │   ├── 08_drugtarget/        # SERPINE1 cis-eQTL MR/coloc, PheWAS, pQTL MR
-│   ├── 09_figures/           # make_fig1–7 + audit
+│   ├── 09_figures/           # make_fig1–8 + audit
+│   ├── 10_elevation_round/   # JTM elevation round: winner's-curse, extended
+│   │                         #   replication, heterogeneity forensics, interorgan
+│   │                         #   L–R map, extended cis screen, PAF, permutations
 │   └── 99_validation/        # one-command re-run of the VALIDATION.md checks
 ├── data/
 │   ├── README.md      # where to get every large dataset (required reading)
 │   ├── derived/       # small shipped intermediates (see PIPELINE.md)
 │   └── raw/           # (empty) place IHME GBD csv here or set GBD_RAW_DIR
 ├── results/           # all analysis outputs (csv/json/md), incl. legacy/
-├── tables/            # Table_S1–S10 (curated; tables/rebuilt/ = regenerated)
-├── figures/           # Fig1–7 (png + pdf) plus analysis-level figures
+├── results_elevation/ # JTM elevation-round outputs (csv/json/md/logs)
+├── tables/            # Table_S1–S18 (curated; tables/rebuilt/ = regenerated)
+├── figures/           # Fig1–7 + Figure_8 (png + pdf) plus analysis-level figures
 └── validation/        # outputs of the latest validation re-run
 ```
 
@@ -117,3 +125,31 @@ Archived release: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21618246.s
 ## MedComm submission update
 
 The earlier EClinicalMedicine submission has formally ended. This update removes the previously listed fourth author from the author list, uses the corrected 204-country GBD framing, and includes the revised Tables S1-S10 and Figures 5-7 prepared for MedComm.
+
+## JTM submission update (elevation round)
+
+Version v1.2.0-jtm adds the elevation round prepared for the *Journal of
+Translational Medicine* submission (2026-09-04):
+
+- `code/10_elevation_round/` — winner's-curse correction (Zhong–Prentice;
+  pure-Python `mr_engine.py`), extended replication across ten cohort–endpoint
+  estimates (FinnGen R12 composites and the BBJ 2025 HF suite), heterogeneity
+  forensics with ancestry/ascertainment stratification, interorgan ligand–
+  receptor map and permutation tests, ancestry-stratified PAF sensitivity, and
+  the extended SERPINE1 cis screen.
+- `results_elevation/` — all new outputs (`winners_curse_persnp.csv`,
+  `finngen_extended_mr.csv`, `bbj2025_stratified_mr.csv`,
+  `heterogeneity_package.json`, `b4_interorgan_edges_lung_to_heart.csv`,
+  `b4_donor_level_tests.csv`, `a2_sqtl_screen_summary_v2.csv`, …).
+- `tables/Table_S11`–`Table_S18` — new supplementary tables (interorgan edges,
+  donor-level crosstalk tests, extended replication, heterogeneity forensics,
+  extended cis screen, instrument portability, ancestry PAF sensitivity, edge
+  permutation tests); `Table_S9` extended with the new data sources.
+- `figures/Figure_8_replication_heterogeneity_crosstalk.pdf/.png` — new Fig. 8
+  (`code/10_elevation_round/make_fig8.py`).
+- `VALIDATION_ADDENDUM_elevation_round.md` and `SAP_preregistered_analyses.md`
+  (locked 2026-09-04) document the executed and pre-registered analyses.
+
+See `VALIDATION_ADDENDUM_elevation_round.md` for the numerical cross-checks of
+this round. The Zenodo concept DOI below always resolves to the latest
+version of this archive.

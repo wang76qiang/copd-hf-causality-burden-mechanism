@@ -3,9 +3,15 @@ Exposure GWAS,IEU ebi-a-GCST90018807,COPD,European,"468,475","13,530 / 454,945"
 Discovery outcome,IEU ebi-a-GCST009541,Heart failure,European,"<= 977,323","47,309 / 930,014"
 Replication 1,FinnGen R12 I9_HEARTFAIL,"Heart failure, strict",Finnish,"500,348","37,653 / 462,695"
 Replication 2,BioBank Japan bbj-a-103/-109,COPD / congestive HF,East Asian,"204,907 / 212,453","3,315 / 201,592; 9,413 / 203,040"
-pQTL,deCODE prot-c-2925_9_1,Circulating PAI-1,Icelandic,"~35,000",NA
-Bulk transcriptome,GEO GSE57148,COPD lung,NA,184,95 / 89
-Bulk transcriptome,GEO GSE57338,Failing vs non-failing LV,NA,313,177 / 136
-"Single cell, lung",CELLxGENE,COPD lung,NA,"57,918 cells","22,119 / 35,799"
-"Single cell, heart",Reichart et al.,DCM/ACM myocardium,NA,"317,581 nuclei (3 compartments)","253,346 / 64,235"
+pQTL,deCODE prot-c-2925_9_1,Circulating PAI-1,Icelandic,"~35,000",
+Bulk transcriptome,GEO GSE57148,COPD lung,,184,95 / 89
+Bulk transcriptome,GEO GSE57338,Failing vs non-failing LV,,313,177 / 136
+"Single cell, lung",CELLxGENE,COPD lung,,"57,918 cells","22,119 / 35,799"
+"Single cell, heart",Reichart et al.,DCM/ACM myocardium,,"317,581 nuclei (3 compartments)","253,346 / 64,235"
 Burden,GBD 2021 (raw IHME),COPD-attributable HF,Global,204 locations,1990-2021
+Extended replication,FinnGen R12 I9_HEARTFAIL_AND_CHD / I9_HEARTFAIL_AND_OVERWEIGHT / FG_OTHHEART / I9_OTHILLHEART,HF phenotypically enriched endpoints,Finnish,"500,348","17,532; 22,965; 106,069; 2,192 cases"
+Extended replication (HF subtypes),"BBJ 2025 HF suite, GWAS Catalog GCST90668009/10/11",All-cause HF / HFpEF / HFrEF,East Asian (Japanese),"204,731","16,251 / 7,154 / 4,254 cases; 197,577 controls"
+Alternative exposure (winner's curse check),FinnGen R12 J10_COPD / COPD_LATER / COPD_EARLY,COPD endpoints,Finnish,"500,348","24,138 / 13,535 / 9,491 cases"
+Extended molecular QTL screen,eQTL Catalogue GTEx v8 (QTS000015 exon/tx/txrev/leafcutter permuted files),"SERPINE1 cis region, 5 cardiorespiratory tissues",European,279-652 per tissue,NA
+Interorgan crosstalk,CELLxGENE 8fbed309 + Reichart heart atlas (fibroblast/endothelial/macrophage h5ad),COPD lung; failing myocardium,NA,"57,918 lung cells; 317,581 heart nuclei","22,119 / 35,799 cells; 61 disease / 18 control donors"
+Pre-registered (access-restricted),MVP HFpEF/HFrEF GWAS (dbGaP phs001672); UK Biobank individual level; OpenGWAS ukb-b-10817 (PM2.5),HF subtypes; incident HF; PM2.5 exposure,European,see source,see source
