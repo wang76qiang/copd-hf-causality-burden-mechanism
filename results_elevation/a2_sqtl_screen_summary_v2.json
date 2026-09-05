@@ -1,0 +1,192 @@
+[
+ {
+  "tissue": "eqtl_extended\\artery_aorta",
+  "quant": "exon",
+  "n_traits": 1,
+  "best_trait": "ENSG00000106366.9_7_101127104_101127244",
+  "best_variant": "chr7_101715417_G_C",
+  "pos": "101715417",
+  "p_raw": "9.13852e-05",
+  "p_beta": "0.223215",
+  "beta": "0.198185"
+ },
+ {
+  "tissue": "eqtl_extended\\artery_aorta",
+  "quant": "leafcutter",
+  "n_traits": 3,
+  "best_trait": "7:101135816:101137001:clu_42773_+",
+  "best_variant": "chr7_101733983_CGGCCG_C",
+  "pos": "101733983",
+  "p_raw": "2.22543e-05",
+  "p_beta": "0.0626411",
+  "beta": "0.303117"
+ },
+ {
+  "tissue": "eqtl_extended\\artery_aorta",
+  "quant": "tx",
+  "n_traits": 1,
+  "best_trait": "ENST00000223095",
+  "best_variant": "chr7_100500272_C_T",
+  "pos": "100500272",
+  "p_raw": "0.000805519",
+  "p_beta": "0.654569",
+  "beta": "0.28253"
+ },
+ {
+  "tissue": "eqtl_extended\\artery_aorta",
+  "quant": "txrev",
+  "n_traits": 0
+ },
+ {
+  "tissue": "eqtl_extended\\artery_coronary",
+  "quant": "exon",
+  "n_traits": 1,
+  "best_trait": "ENSG00000106366.9_7_101130421_101130654",
+  "best_variant": "chr7_101038481_A_G",
+  "pos": "101038481",
+  "p_raw": "0.000447214",
+  "p_beta": "0.650187",
+  "beta": "0.229341"
+ },
+ {
+  "tissue": "eqtl_extended\\artery_coronary",
+  "quant": "leafcutter",
+  "n_traits": 3,
+  "best_trait": "7:101137084:101137405:clu_42774_+",
+  "best_variant": "chr7_101824223_T_G",
+  "pos": "101824223",
+  "p_raw": "2.96772e-05",
+  "p_beta": "0.0980631",
+  "beta": "0.408314"
+ },
+ {
+  "tissue": "eqtl_extended\\artery_coronary",
+  "quant": "tx",
+  "n_traits": 1,
+  "best_trait": "ENST00000223095",
+  "best_variant": "chr7_101520550_G_A",
+  "pos": "101520550",
+  "p_raw": "0.000179176",
+  "p_beta": "0.247764",
+  "beta": "0.341283"
+ },
+ {
+  "tissue": "eqtl_extended\\artery_coronary",
+  "quant": "txrev",
+  "n_traits": 0
+ },
+ {
+  "tissue": "eqtl_extended\\heart_AA",
+  "quant": "exon",
+  "n_traits": 1,
+  "best_trait": "ENSG00000106366.9_7_101130421_101130654",
+  "best_variant": "chr7_101986969_C_T",
+  "pos": "101986969",
+  "p_raw": "0.000146105",
+  "p_beta": "0.489151",
+  "beta": "-0.138375"
+ },
+ {
+  "tissue": "eqtl_extended\\heart_AA",
+  "quant": "leafcutter",
+  "n_traits": 2,
+  "best_trait": "7:101128664:101130421:clu_40729_+",
+  "best_variant": "chr7_100296336_GGT_G",
+  "pos": "100296336",
+  "p_raw": "1.33318e-05",
+  "p_beta": "0.0612337",
+  "beta": "1.27573"
+ },
+ {
+  "tissue": "eqtl_extended\\heart_AA",
+  "quant": "tx",
+  "n_traits": 1,
+  "best_trait": "ENST00000223095",
+  "best_variant": "chr7_100981362_T_G",
+  "pos": "100981362",
+  "p_raw": "0.00153037",
+  "p_beta": "0.845887",
+  "beta": "0.518236"
+ },
+ {
+  "tissue": "eqtl_extended\\heart_AA",
+  "quant": "txrev",
+  "n_traits": 0
+ },
+ {
+  "tissue": "eqtl_extended\\heart_LV",
+  "quant": "exon",
+  "n_traits": 1,
+  "best_trait": "ENSG00000106366.9_7_101127104_101127244",
+  "best_variant": "chr7_101213448_G_A",
+  "pos": "101213448",
+  "p_raw": "0.000454653",
+  "p_beta": "0.871361",
+  "beta": "0.472014"
+ },
+ {
+  "tissue": "eqtl_extended\\heart_LV",
+  "quant": "leafcutter",
+  "n_traits": 2,
+  "best_trait": "7:101128664:101130421:clu_40729_+",
+  "best_variant": "chr7_101066728_G_T",
+  "pos": "101066728",
+  "p_raw": "0.000474941",
+  "p_beta": "0.73814",
+  "beta": "1.09159"
+ },
+ {
+  "tissue": "eqtl_extended\\heart_LV",
+  "quant": "tx",
+  "n_traits": 1,
+  "best_trait": "ENST00000223095",
+  "best_variant": "chr7_100340319_A_G",
+  "pos": "100340319",
+  "p_raw": "0.000540802",
+  "p_beta": "0.519905",
+  "beta": "-0.313432"
+ },
+ {
+  "tissue": "eqtl_extended\\heart_LV",
+  "quant": "txrev",
+  "n_traits": 0
+ },
+ {
+  "tissue": "eqtl_extended\\lung",
+  "quant": "exon",
+  "n_traits": 1,
+  "best_trait": "ENSG00000106366.9_7_101130421_101130654",
+  "best_variant": "chr7_101776083_T_C",
+  "pos": "101776083",
+  "p_raw": "0.000661276",
+  "p_beta": "0.845801",
+  "beta": "0.649331"
+ },
+ {
+  "tissue": "eqtl_extended\\lung",
+  "quant": "leafcutter",
+  "n_traits": 3,
+  "best_trait": "7:101128688:101130421:clu_52437_+",
+  "best_variant": "chr7_100942928_G_A",
+  "pos": "100942928",
+  "p_raw": "0.000210433",
+  "p_beta": "0.479795",
+  "beta": "0.394999"
+ },
+ {
+  "tissue": "eqtl_extended\\lung",
+  "quant": "tx",
+  "n_traits": 1,
+  "best_trait": "ENST00000223095",
+  "best_variant": "chr7_100673284_C_CG",
+  "pos": "100673284",
+  "p_raw": "0.000209852",
+  "p_beta": "0.298281",
+  "beta": "-0.229575"
+ },
+ {
+  "tissue": "eqtl_extended\\lung",
+  "quant": "txrev",
+  "n_traits": 0
+ }
+]
