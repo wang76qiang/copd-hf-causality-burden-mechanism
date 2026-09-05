@@ -67,3 +67,9 @@ Four pre-specified elevation analyses executed; two further analyses pre-registe
 9. **Formal SAP for the three pre-registered analyses** — `SAP_preregistered_analyses.md` (R1 MVP HFpEF/HFrEF MR; R2 UKB PRS→incident HF; R3 PM2.5 MR), with hypotheses, estimators, and success/failure criteria.
 
 Manuscript text revisions in round 2: abstract ancestry qualification (M2) and lung-function softening (M3); instrument-availability and portability reporting (M1); ten-estimate provenance; ancestry-mechanism decomposition in Discussion; ancestry-stratified PAF paragraph in Results; donor-frame disclosure in Methods (M7); GBD-2021 version justification in Limitations (M6); Table 1 note disambiguation; Statistics software cross-reference; edge-permutation framework in Methods/Results/Fig. 8 legend (M4).
+
+---
+
+## v1.2.1-jtm update (2026-09-05)
+
+Figure 8 in this archive was regenerated to the final manuscript revision: panel A now shows the European replication-only subgroup diamond (five FinnGen endpoints, discovery excluded; OR 1.016, 95% CI 0.990-1.043, P = 0.23, I2 = 20%) that the manuscript text and legend describe. Table S10 case-count uncertainty intervals were corrected to the audited extraction bounds (1990: 1.50 M, 95% UI 1.14-1.94 M; 2021: 3.61 M, 95% UI 2.67-4.80 M).

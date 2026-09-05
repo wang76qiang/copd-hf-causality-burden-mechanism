@@ -153,3 +153,13 @@ Translational Medicine* submission (2026-09-04):
 See `VALIDATION_ADDENDUM_elevation_round.md` for the numerical cross-checks of
 this round. The Zenodo concept DOI below always resolves to the latest
 version of this archive.
+
+### v1.2.1-jtm (2026-09-05)
+
+Version v1.2.1-jtm updates the archived Figure 8 (`Figure_8_replication_
+heterogeneity_crosstalk.pdf/.png`) to the final revision that appears in the
+manuscript (panel A now includes the European replication-only diamond,
+k = 5, I² = 20%, OR 1.016 [0.990–1.043]) and corrects the Table S10 1990/2021
+case uncertainty-interval bounds (1.14–1.94 M in 1990; 2.67–4.80 M in 2021) to
+match the audited extraction (`results/t1_extract_summary.json`) and the
+manuscript text.
